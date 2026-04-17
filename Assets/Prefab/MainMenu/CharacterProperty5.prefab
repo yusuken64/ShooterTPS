@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &219628378951487308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509441137115520821}
+  - component: {fileID: 8113597107332791588}
+  m_Layer: 13
+  m_Name: CharacterProperty5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &509441137115520821
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219628378951487308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6514752697677875205}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8113597107332791588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219628378951487308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0219a82cb9ec43fd92ea1609c5e233a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Yuke
+  Description: The ahegao on my UwUzi make the bullets stronger.
+  StartingWeapons: 07000000
+  Animator: {fileID: 6514752697668560789}
+  PlayerCharacterPrefab: {fileID: 8062157943529065004, guid: 64e9f77d029303d408b5999267432110, type: 3}
+  StartingUpgrades:
+  - {fileID: 11400000, guid: 34992b021971d54499cc9b5aa1d42d99, type: 2}
+--- !u!1001 &3858323607201046473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 509441137115520821}
+    m_Modifications:
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062157943529065004, guid: 64e9f77d029303d408b5999267432110, type: 3}
+      propertyPath: m_Name
+      value: Set Costume_02 SD Yuko
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64e9f77d029303d408b5999267432110, type: 3}
+--- !u!95 &6514752697668560789 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8062157943538563164, guid: 64e9f77d029303d408b5999267432110, type: 3}
+  m_PrefabInstance: {fileID: 3858323607201046473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6514752697677875205 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8062157943528970188, guid: 64e9f77d029303d408b5999267432110, type: 3}
+  m_PrefabInstance: {fileID: 3858323607201046473}
+  m_PrefabAsset: {fileID: 0}

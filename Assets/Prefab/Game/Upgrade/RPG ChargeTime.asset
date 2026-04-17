@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8e6aaa48a579449afc7f1199e3f438, type: 3}
+  m_Name: RPG ChargeTime
+  m_EditorClassIdentifier: 
+  UpgradeName: Improve RPG
+  Description: RPG Charge Time
+  GunType: 4
+  Unlock: 0
+  DamageIncrease: 0
+  RateOfFireDecrease: 0
+  ReloadTimeDecrease: 0
+  SpreadAngleDecrease: 0
+  ReloadAmountIncrease: 0
+  ClipSize: 0
+  ChargeTimeDecrease: 0.6
+  MinigunWindup: 0
+  ExplosionSize: 0
+  UnlockItemDefinition: {fileID: 11400000, guid: f3706ac3dbbb8364791c6487e2acbdea, type: 2}

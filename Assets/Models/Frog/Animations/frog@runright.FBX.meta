@@ -1,0 +1,758 @@
+fileFormatVersion: 2
+guid: 0ae8598017ed160469530984c7bc6f4f
+timeCreated: 1549368825
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Frog
+    100002: //RootNode
+    100004: frog_COM_ctrl
+    100006: frog_Eyes_ctrl
+    100008: frog_Head-nub_bone
+    100010: frog_Head_bone
+    100012: frog_Head_ctrl
+    100014: frog_Hip_ctrl
+    100016: frog_jaw1_bone
+    100018: frog_jaw1_ctrl
+    100020: frog_jaw2-nub_bone
+    100022: frog_jaw2_bone
+    100024: frog_l_Ankle_bone
+    100026: frog_l_ball_IKGoal
+    100028: frog_l_Clav_bone
+    100030: frog_l_Clavicle_ctrl
+    100032: frog_l_Elbow_FK_ctrl
+    100034: frog_l_EyelidDown-nub_bone
+    100036: frog_l_EyelidDown_bone
+    100038: frog_l_EyelidUp-nub_bone
+    100040: frog_l_EyelidUp_bone
+    100042: frog_l_Foot_ctrl
+    100044: frog_l_Forearm_bone
+    100046: frog_l_Forearm_FK_bone
+    100048: frog_l_Forearm_IK_bone
+    100050: frog_l_ForearmRoll1_bone
+    100052: frog_l_ForearmRoll2_bone
+    100054: frog_l_Hand-nub_bone
+    100056: frog_l_Hand_bone
+    100058: frog_l_Hand_FK_ctrl
+    100060: frog_l_Hand_IK_ctrl
+    100062: frog_l_Hand_IK_Goal
+    100064: frog_l_Heel_hlp
+    100066: frog_l_heel_IKGoal
+    100068: frog_l_HeelPeel_hlp
+    100070: frog_l_Index1_bone
+    100072: frog_l_Index2_bone
+    100074: frog_l_Index3-nub_bone
+    100076: frog_l_Index3_bone
+    100078: frog_l_Index_ctrl
+    100080: frog_l_Index_ctrl001
+    100082: frog_l_Knee_bone
+    100084: frog_l_Middle1_bone
+    100086: frog_l_Middle2_bone
+    100088: frog_l_Middle3-nub_bone
+    100090: frog_l_Middle3_bone
+    100092: frog_l_Middle_ctrl
+    100094: frog_l_Middle_ctrl001
+    100096: frog_l_Pinky1_bone
+    100098: frog_l_Pinky2_bone
+    100100: frog_l_Pinky3-nub_bone
+    100102: frog_l_Pinky3_bone
+    100104: frog_l_Pinky_ctrl
+    100106: frog_l_Pinky_ctrl001
+    100108: frog_l_Shoulder_bone
+    100110: frog_l_Shoulder_FK_bone
+    100112: frog_l_Shoulder_FK_ctrl
+    100114: frog_l_Shoulder_IK_bone
+    100116: frog_l_ShoulderRoll_bone
+    100118: frog_l_ShoulderTwist_hlp
+    100120: frog_l_Thigh_bone
+    100122: frog_l_Thumb1_bone
+    100124: frog_l_Thumb2_bone
+    100126: frog_l_Thumb3-nub_bone
+    100128: frog_l_Thumb3_bone
+    100130: frog_l_Thumb_ctrl
+    100132: frog_l_Thumb_ctrl001
+    100134: frog_l_Toe-nub_bone
+    100136: frog_l_Toe_bone
+    100138: frog_l_toe_IKGoal
+    100140: frog_l_ToeLift_hlp
+    100142: frog_l_ToeTap_hlp
+    100144: frog_l_Wrist_bone
+    100146: frog_l_Wrist_FK_bone
+    100148: frog_l_Wrist_IK_bone
+    100150: frog_Main_ctrl
+    100152: frog_Neck_bone
+    100154: frog_NeckBase_ctrl
+    100156: frog_Pelvis-nub_bone
+    100158: frog_Pelvis_bone
+    100160: frog_r_Ankle_bone
+    100162: frog_r_ball_IKGoal
+    100164: frog_r_Clav_bone
+    100166: frog_r_Clavicle_ctrl
+    100168: frog_r_Elbow_FK_ctrl
+    100170: frog_r_Eye_mesh
+    100172: frog_r_Eye_mesh002
+    100174: frog_r_EyelidDown-nub_bone
+    100176: frog_r_EyelidDown_bone
+    100178: frog_r_EyelidUp-nub_bone
+    100180: frog_r_EyelidUp_bone
+    100182: frog_r_Foot_ctrl
+    100184: frog_r_Forearm_bone
+    100186: frog_r_Forearm_FK_bone
+    100188: frog_r_Forearm_IK_bone
+    100190: frog_r_ForearmRoll1_bone
+    100192: frog_r_ForearmRoll2_bone
+    100194: frog_r_Hand-nub_bone
+    100196: frog_r_Hand_bone
+    100198: frog_r_Hand_FK_ctrl
+    100200: frog_r_Hand_IK_ctrl
+    100202: frog_r_Hand_IKGoal
+    100204: frog_r_Heel_hlp
+    100206: frog_r_heel_IKGoal
+    100208: frog_r_HeelPeel_hlp
+    100210: frog_r_Index1_bone
+    100212: frog_r_Index2_bone
+    100214: frog_r_Index3-nub_bone
+    100216: frog_r_Index3_bone
+    100218: frog_r_Knee_bone
+    100220: frog_r_Middle1_bone
+    100222: frog_r_Middle2_bone
+    100224: frog_r_Middle3-nub_bone
+    100226: frog_r_Middle3_bone
+    100228: frog_r_Pinky1_bone
+    100230: frog_r_Pinky2_bone
+    100232: frog_r_Pinky3-nub_bone
+    100234: frog_r_Pinky3_bone
+    100236: frog_r_Shoulder_bone
+    100238: frog_r_Shoulder_FK_bone
+    100240: frog_r_Shoulder_FK_ctrl
+    100242: frog_r_Shoulder_IK_bone
+    100244: frog_r_ShoulderRoll_bone
+    100246: frog_r_ShoulderTwist_hlp
+    100248: frog_r_Thigh_bone
+    100250: frog_r_Thumb1_bone
+    100252: frog_r_Thumb2_bone
+    100254: frog_r_Thumb3-nub_bone
+    100256: frog_r_Thumb3_bone
+    100258: frog_r_Toe-nub_bone
+    100260: frog_r_Toe_bone
+    100262: frog_r_toe_IKGoal
+    100264: frog_r_ToeLift_hlp
+    100266: frog_r_ToeTap_hlp
+    100268: frog_r_Wrist_bone
+    100270: frog_r_Wrist_FK_bone
+    100272: frog_r_Wrist_IK_bone
+    100274: frog_snout1_bone
+    100276: frog_snout1_ctrl
+    100278: frog_snout2-nub_bone
+    100280: frog_snout2_bone
+    100282: frog_Spine1_bone
+    100284: frog_Spine2_bone
+    100286: frog_Spine3_bone
+    100288: frog_SpineBase_ctrl
+    400000: Frog
+    400002: //RootNode
+    400004: frog_COM_ctrl
+    400006: frog_Eyes_ctrl
+    400008: frog_Head-nub_bone
+    400010: frog_Head_bone
+    400012: frog_Head_ctrl
+    400014: frog_Hip_ctrl
+    400016: frog_jaw1_bone
+    400018: frog_jaw1_ctrl
+    400020: frog_jaw2-nub_bone
+    400022: frog_jaw2_bone
+    400024: frog_l_Ankle_bone
+    400026: frog_l_ball_IKGoal
+    400028: frog_l_Clav_bone
+    400030: frog_l_Clavicle_ctrl
+    400032: frog_l_Elbow_FK_ctrl
+    400034: frog_l_EyelidDown-nub_bone
+    400036: frog_l_EyelidDown_bone
+    400038: frog_l_EyelidUp-nub_bone
+    400040: frog_l_EyelidUp_bone
+    400042: frog_l_Foot_ctrl
+    400044: frog_l_Forearm_bone
+    400046: frog_l_Forearm_FK_bone
+    400048: frog_l_Forearm_IK_bone
+    400050: frog_l_ForearmRoll1_bone
+    400052: frog_l_ForearmRoll2_bone
+    400054: frog_l_Hand-nub_bone
+    400056: frog_l_Hand_bone
+    400058: frog_l_Hand_FK_ctrl
+    400060: frog_l_Hand_IK_ctrl
+    400062: frog_l_Hand_IK_Goal
+    400064: frog_l_Heel_hlp
+    400066: frog_l_heel_IKGoal
+    400068: frog_l_HeelPeel_hlp
+    400070: frog_l_Index1_bone
+    400072: frog_l_Index2_bone
+    400074: frog_l_Index3-nub_bone
+    400076: frog_l_Index3_bone
+    400078: frog_l_Index_ctrl
+    400080: frog_l_Index_ctrl001
+    400082: frog_l_Knee_bone
+    400084: frog_l_Middle1_bone
+    400086: frog_l_Middle2_bone
+    400088: frog_l_Middle3-nub_bone
+    400090: frog_l_Middle3_bone
+    400092: frog_l_Middle_ctrl
+    400094: frog_l_Middle_ctrl001
+    400096: frog_l_Pinky1_bone
+    400098: frog_l_Pinky2_bone
+    400100: frog_l_Pinky3-nub_bone
+    400102: frog_l_Pinky3_bone
+    400104: frog_l_Pinky_ctrl
+    400106: frog_l_Pinky_ctrl001
+    400108: frog_l_Shoulder_bone
+    400110: frog_l_Shoulder_FK_bone
+    400112: frog_l_Shoulder_FK_ctrl
+    400114: frog_l_Shoulder_IK_bone
+    400116: frog_l_ShoulderRoll_bone
+    400118: frog_l_ShoulderTwist_hlp
+    400120: frog_l_Thigh_bone
+    400122: frog_l_Thumb1_bone
+    400124: frog_l_Thumb2_bone
+    400126: frog_l_Thumb3-nub_bone
+    400128: frog_l_Thumb3_bone
+    400130: frog_l_Thumb_ctrl
+    400132: frog_l_Thumb_ctrl001
+    400134: frog_l_Toe-nub_bone
+    400136: frog_l_Toe_bone
+    400138: frog_l_toe_IKGoal
+    400140: frog_l_ToeLift_hlp
+    400142: frog_l_ToeTap_hlp
+    400144: frog_l_Wrist_bone
+    400146: frog_l_Wrist_FK_bone
+    400148: frog_l_Wrist_IK_bone
+    400150: frog_Main_ctrl
+    400152: frog_Neck_bone
+    400154: frog_NeckBase_ctrl
+    400156: frog_Pelvis-nub_bone
+    400158: frog_Pelvis_bone
+    400160: frog_r_Ankle_bone
+    400162: frog_r_ball_IKGoal
+    400164: frog_r_Clav_bone
+    400166: frog_r_Clavicle_ctrl
+    400168: frog_r_Elbow_FK_ctrl
+    400170: frog_r_Eye_mesh
+    400172: frog_r_Eye_mesh002
+    400174: frog_r_EyelidDown-nub_bone
+    400176: frog_r_EyelidDown_bone
+    400178: frog_r_EyelidUp-nub_bone
+    400180: frog_r_EyelidUp_bone
+    400182: frog_r_Foot_ctrl
+    400184: frog_r_Forearm_bone
+    400186: frog_r_Forearm_FK_bone
+    400188: frog_r_Forearm_IK_bone
+    400190: frog_r_ForearmRoll1_bone
+    400192: frog_r_ForearmRoll2_bone
+    400194: frog_r_Hand-nub_bone
+    400196: frog_r_Hand_bone
+    400198: frog_r_Hand_FK_ctrl
+    400200: frog_r_Hand_IK_ctrl
+    400202: frog_r_Hand_IKGoal
+    400204: frog_r_Heel_hlp
+    400206: frog_r_heel_IKGoal
+    400208: frog_r_HeelPeel_hlp
+    400210: frog_r_Index1_bone
+    400212: frog_r_Index2_bone
+    400214: frog_r_Index3-nub_bone
+    400216: frog_r_Index3_bone
+    400218: frog_r_Knee_bone
+    400220: frog_r_Middle1_bone
+    400222: frog_r_Middle2_bone
+    400224: frog_r_Middle3-nub_bone
+    400226: frog_r_Middle3_bone
+    400228: frog_r_Pinky1_bone
+    400230: frog_r_Pinky2_bone
+    400232: frog_r_Pinky3-nub_bone
+    400234: frog_r_Pinky3_bone
+    400236: frog_r_Shoulder_bone
+    400238: frog_r_Shoulder_FK_bone
+    400240: frog_r_Shoulder_FK_ctrl
+    400242: frog_r_Shoulder_IK_bone
+    400244: frog_r_ShoulderRoll_bone
+    400246: frog_r_ShoulderTwist_hlp
+    400248: frog_r_Thigh_bone
+    400250: frog_r_Thumb1_bone
+    400252: frog_r_Thumb2_bone
+    400254: frog_r_Thumb3-nub_bone
+    400256: frog_r_Thumb3_bone
+    400258: frog_r_Toe-nub_bone
+    400260: frog_r_Toe_bone
+    400262: frog_r_toe_IKGoal
+    400264: frog_r_ToeLift_hlp
+    400266: frog_r_ToeTap_hlp
+    400268: frog_r_Wrist_bone
+    400270: frog_r_Wrist_FK_bone
+    400272: frog_r_Wrist_IK_bone
+    400274: frog_snout1_bone
+    400276: frog_snout1_ctrl
+    400278: frog_snout2-nub_bone
+    400280: frog_snout2_bone
+    400282: frog_Spine1_bone
+    400284: frog_Spine2_bone
+    400286: frog_Spine3_bone
+    400288: frog_SpineBase_ctrl
+    2300000: frog_Eyes_ctrl
+    2300002: frog_jaw1_ctrl
+    2300004: frog_l_Clavicle_ctrl
+    2300006: frog_l_Elbow_FK_ctrl
+    2300008: frog_l_Foot_ctrl
+    2300010: frog_l_Hand_FK_ctrl
+    2300012: frog_l_Hand_IK_ctrl
+    2300014: frog_l_Index_ctrl
+    2300016: frog_l_Index_ctrl001
+    2300018: frog_l_Middle_ctrl
+    2300020: frog_l_Middle_ctrl001
+    2300022: frog_l_Pinky_ctrl
+    2300024: frog_l_Pinky_ctrl001
+    2300026: frog_l_Shoulder_FK_ctrl
+    2300028: frog_l_Thumb_ctrl
+    2300030: frog_l_Thumb_ctrl001
+    2300032: frog_r_Clavicle_ctrl
+    2300034: frog_r_Elbow_FK_ctrl
+    2300036: frog_r_Eye_mesh
+    2300038: frog_r_Eye_mesh002
+    2300040: frog_r_Foot_ctrl
+    2300042: frog_r_Hand_FK_ctrl
+    2300044: frog_r_Hand_IK_ctrl
+    2300046: frog_r_Shoulder_FK_ctrl
+    2300048: frog_snout1_ctrl
+    3300000: frog_Eyes_ctrl
+    3300002: frog_jaw1_ctrl
+    3300004: frog_l_Clavicle_ctrl
+    3300006: frog_l_Elbow_FK_ctrl
+    3300008: frog_l_Foot_ctrl
+    3300010: frog_l_Hand_FK_ctrl
+    3300012: frog_l_Hand_IK_ctrl
+    3300014: frog_l_Index_ctrl
+    3300016: frog_l_Index_ctrl001
+    3300018: frog_l_Middle_ctrl
+    3300020: frog_l_Middle_ctrl001
+    3300022: frog_l_Pinky_ctrl
+    3300024: frog_l_Pinky_ctrl001
+    3300026: frog_l_Shoulder_FK_ctrl
+    3300028: frog_l_Thumb_ctrl
+    3300030: frog_l_Thumb_ctrl001
+    3300032: frog_r_Clavicle_ctrl
+    3300034: frog_r_Elbow_FK_ctrl
+    3300036: frog_r_Eye_mesh
+    3300038: frog_r_Eye_mesh002
+    3300040: frog_r_Foot_ctrl
+    3300042: frog_r_Hand_FK_ctrl
+    3300044: frog_r_Hand_IK_ctrl
+    3300046: frog_r_Shoulder_FK_ctrl
+    3300048: frog_snout1_ctrl
+    4300000: Frog
+    4300002: frog_r_Foot_ctrl
+    4300004: frog_l_Foot_ctrl
+    4300006: frog_snout1_ctrl
+    4300008: frog_jaw1_ctrl
+    4300010: frog_Eyes_ctrl
+    4300012: frog_r_Eye_mesh002
+    4300014: frog_r_Eye_mesh
+    4300016: frog_l_Index_ctrl001
+    4300018: frog_l_Middle_ctrl001
+    4300020: frog_l_Pinky_ctrl001
+    4300022: frog_l_Thumb_ctrl001
+    4300024: frog_r_Shoulder_FK_ctrl
+    4300026: frog_r_Elbow_FK_ctrl
+    4300028: frog_r_Hand_FK_ctrl
+    4300030: frog_l_Index_ctrl
+    4300032: frog_l_Thumb_ctrl
+    4300034: frog_l_Middle_ctrl
+    4300036: frog_l_Pinky_ctrl
+    4300038: frog_l_Shoulder_FK_ctrl
+    4300040: frog_l_Elbow_FK_ctrl
+    4300042: frog_l_Hand_FK_ctrl
+    4300044: frog_l_Clavicle_ctrl
+    4300046: frog_r_Clavicle_ctrl
+    4300048: frog_r_Hand_IK_ctrl
+    4300050: frog_l_Hand_IK_ctrl
+    7400000: runright
+    9500000: //RootNode
+    13700000: Frog
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: runright
+      takeName: Take 001
+      firstFrame: 525
+      lastFrame: 537
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Frog
+        weight: 1
+      - path: frog_Head_ctrl
+        weight: 1
+      - path: frog_Hip_ctrl
+        weight: 1
+      - path: frog_l_ShoulderTwist_hlp
+        weight: 1
+      - path: frog_Main_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_l_Hand_IK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_l_Hand_IK_ctrl/frog_l_Hand_IK_Goal
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_l_Thigh_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_l_Thigh_bone/frog_l_Knee_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_l_Thigh_bone/frog_l_Knee_bone/frog_l_Ankle_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_l_Thigh_bone/frog_l_Knee_bone/frog_l_Ankle_bone/frog_l_Toe_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_l_Thigh_bone/frog_l_Knee_bone/frog_l_Ankle_bone/frog_l_Toe_bone/frog_l_Toe-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_Pelvis-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_r_Thigh_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_r_Thigh_bone/frog_r_Knee_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_r_Thigh_bone/frog_r_Knee_bone/frog_r_Ankle_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_r_Thigh_bone/frog_r_Knee_bone/frog_r_Ankle_bone/frog_r_Toe_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Pelvis_bone/frog_r_Thigh_bone/frog_r_Knee_bone/frog_r_Ankle_bone/frog_r_Toe_bone/frog_r_Toe-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_r_Hand_IK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_r_Hand_IK_ctrl/frog_r_Hand_IKGoal
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_ForearmRoll1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_ForearmRoll2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Hand-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Index_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Index_ctrl/frog_l_Index1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Index_ctrl/frog_l_Index1_bone/frog_l_Index2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Index_ctrl/frog_l_Index1_bone/frog_l_Index2_bone/frog_l_Index3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Index_ctrl/frog_l_Index1_bone/frog_l_Index2_bone/frog_l_Index3_bone/frog_l_Index3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Middle_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Middle_ctrl/frog_l_Middle1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Middle_ctrl/frog_l_Middle1_bone/frog_l_Middle2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Middle_ctrl/frog_l_Middle1_bone/frog_l_Middle2_bone/frog_l_Middle3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Middle_ctrl/frog_l_Middle1_bone/frog_l_Middle2_bone/frog_l_Middle3_bone/frog_l_Middle3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Pinky_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Pinky_ctrl/frog_l_Pinky1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Pinky_ctrl/frog_l_Pinky1_bone/frog_l_Pinky2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Pinky_ctrl/frog_l_Pinky1_bone/frog_l_Pinky2_bone/frog_l_Pinky3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Pinky_ctrl/frog_l_Pinky1_bone/frog_l_Pinky2_bone/frog_l_Pinky3_bone/frog_l_Pinky3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Thumb_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Thumb_ctrl/frog_l_Thumb1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Thumb_ctrl/frog_l_Thumb1_bone/frog_l_Thumb2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Thumb_ctrl/frog_l_Thumb1_bone/frog_l_Thumb2_bone/frog_l_Thumb3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_Forearm_bone/frog_l_Wrist_bone/frog_l_Hand_bone/frog_l_Thumb_ctrl/frog_l_Thumb1_bone/frog_l_Thumb2_bone/frog_l_Thumb3_bone/frog_l_Thumb3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_bone/frog_l_ShoulderRoll_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_FK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_FK_bone/frog_l_Forearm_FK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_FK_bone/frog_l_Forearm_FK_bone/frog_l_Wrist_FK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_FK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_FK_ctrl/frog_l_Elbow_FK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_FK_ctrl/frog_l_Elbow_FK_ctrl/frog_l_Hand_FK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_IK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_IK_bone/frog_l_Forearm_IK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clav_bone/frog_l_Shoulder_IK_bone/frog_l_Forearm_IK_bone/frog_l_Wrist_IK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_l_Clavicle_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_Eyes_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_Head-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_jaw1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_jaw1_bone/frog_jaw2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_jaw1_bone/frog_jaw2_bone/frog_jaw2-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_jaw1_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_l_EyelidDown_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_l_EyelidDown_bone/frog_l_EyelidDown-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_l_EyelidUp_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_l_EyelidUp_bone/frog_l_EyelidUp-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_r_Eye_mesh
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_r_Eye_mesh002
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_r_EyelidDown_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_r_EyelidDown_bone/frog_r_EyelidDown-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_r_EyelidUp_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_r_EyelidUp_bone/frog_r_EyelidUp-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_snout1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_snout1_bone/frog_snout2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_snout1_bone/frog_snout2_bone/frog_snout2-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_Neck_bone/frog_Head_bone/frog_snout1_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_ForearmRoll1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_ForearmRoll2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Index_ctrl001
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Index_ctrl001/frog_r_Pinky1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Index_ctrl001/frog_r_Pinky1_bone/frog_r_Pinky2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Index_ctrl001/frog_r_Pinky1_bone/frog_r_Pinky2_bone/frog_r_Pinky3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Index_ctrl001/frog_r_Pinky1_bone/frog_r_Pinky2_bone/frog_r_Pinky3_bone/frog_r_Pinky3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Middle_ctrl001
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Middle_ctrl001/frog_r_Middle1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Middle_ctrl001/frog_r_Middle1_bone/frog_r_Middle2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Middle_ctrl001/frog_r_Middle1_bone/frog_r_Middle2_bone/frog_r_Middle3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Middle_ctrl001/frog_r_Middle1_bone/frog_r_Middle2_bone/frog_r_Middle3_bone/frog_r_Middle3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Pinky_ctrl001
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Pinky_ctrl001/frog_r_Index1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Pinky_ctrl001/frog_r_Index1_bone/frog_r_Index2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Pinky_ctrl001/frog_r_Index1_bone/frog_r_Index2_bone/frog_r_Index3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Pinky_ctrl001/frog_r_Index1_bone/frog_r_Index2_bone/frog_r_Index3_bone/frog_r_Index3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Thumb_ctrl001
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Thumb_ctrl001/frog_r_Thumb1_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Thumb_ctrl001/frog_r_Thumb1_bone/frog_r_Thumb2_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Thumb_ctrl001/frog_r_Thumb1_bone/frog_r_Thumb2_bone/frog_r_Thumb3_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_l_Thumb_ctrl001/frog_r_Thumb1_bone/frog_r_Thumb2_bone/frog_r_Thumb3_bone/frog_r_Thumb3-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_Forearm_bone/frog_r_Wrist_bone/frog_r_Hand_bone/frog_r_Hand-nub_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_bone/frog_r_ShoulderRoll_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_FK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_FK_bone/frog_r_Forearm_FK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_FK_bone/frog_r_Forearm_FK_bone/frog_r_Wrist_FK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_FK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_FK_ctrl/frog_r_Elbow_FK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_FK_ctrl/frog_r_Elbow_FK_ctrl/frog_r_Hand_FK_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_IK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_IK_bone/frog_r_Forearm_IK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clav_bone/frog_r_Shoulder_IK_bone/frog_r_Forearm_IK_bone/frog_r_Wrist_IK_bone
+        weight: 1
+      - path: frog_Main_ctrl/frog_COM_ctrl/frog_Spine1_bone/frog_Spine2_bone/frog_Spine3_bone/frog_r_Clavicle_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp/frog_l_ToeLift_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp/frog_l_ToeLift_hlp/frog_l_HeelPeel_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp/frog_l_ToeLift_hlp/frog_l_HeelPeel_hlp/frog_l_ball_IKGoal
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp/frog_l_ToeLift_hlp/frog_l_HeelPeel_hlp/frog_l_heel_IKGoal
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp/frog_l_ToeLift_hlp/frog_l_ToeTap_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_l_Foot_ctrl/frog_l_Heel_hlp/frog_l_ToeLift_hlp/frog_l_ToeTap_hlp/frog_l_toe_IKGoal
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp/frog_r_ToeLift_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp/frog_r_ToeLift_hlp/frog_r_HeelPeel_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp/frog_r_ToeLift_hlp/frog_r_HeelPeel_hlp/frog_r_ball_IKGoal
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp/frog_r_ToeLift_hlp/frog_r_HeelPeel_hlp/frog_r_heel_IKGoal
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp/frog_r_ToeLift_hlp/frog_r_ToeTap_hlp
+        weight: 1
+      - path: frog_Main_ctrl/frog_r_Foot_ctrl/frog_r_Heel_hlp/frog_r_ToeLift_hlp/frog_r_ToeTap_hlp/frog_r_toe_IKGoal
+        weight: 1
+      - path: frog_NeckBase_ctrl
+        weight: 1
+      - path: frog_r_ShoulderTwist_hlp
+        weight: 1
+      - path: frog_SpineBase_ctrl
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 525
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: frog_Main_ctrl
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

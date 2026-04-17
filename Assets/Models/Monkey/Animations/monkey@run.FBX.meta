@@ -1,0 +1,2441 @@
+fileFormatVersion: 2
+guid: 2e5a54aeeb95dc649a7f2f2e26c14853
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Ctrl_ Right Foot
+  - first:
+      1: 100002
+    second: Ctrl_General
+  - first:
+      1: 100004
+    second: Ctrl_Head
+  - first:
+      1: 100006
+    second: Ctrl_Left Arm01
+  - first:
+      1: 100008
+    second: Ctrl_Left Arm02
+  - first:
+      1: 100010
+    second: Ctrl_Left Big Toe01
+  - first:
+      1: 100012
+    second: Ctrl_Left Big Toe02
+  - first:
+      1: 100014
+    second: Ctrl_Left Big Toe03
+  - first:
+      1: 100016
+    second: Ctrl_Left Eye01
+  - first:
+      1: 100018
+    second: Ctrl_Left Femur
+  - first:
+      1: 100020
+    second: Ctrl_Left Foot
+  - first:
+      1: 100022
+    second: Ctrl_Left Hand01
+  - first:
+      1: 100024
+    second: Ctrl_Left Index01
+  - first:
+      1: 100026
+    second: Ctrl_Left Index02
+  - first:
+      1: 100028
+    second: Ctrl_Left Index03
+  - first:
+      1: 100030
+    second: Ctrl_Left Index04
+  - first:
+      1: 100032
+    second: Ctrl_Left Leg
+  - first:
+      1: 100034
+    second: Ctrl_Left Little Toe01
+  - first:
+      1: 100036
+    second: Ctrl_Left Little Toe02
+  - first:
+      1: 100038
+    second: Ctrl_Left Little Toe03
+  - first:
+      1: 100040
+    second: Ctrl_Left Middle Toe01
+  - first:
+      1: 100042
+    second: Ctrl_Left Middle Toe02
+  - first:
+      1: 100044
+    second: Ctrl_Left Middle Toe03
+  - first:
+      1: 100046
+    second: Ctrl_Left Middle01
+  - first:
+      1: 100048
+    second: Ctrl_Left Middle02
+  - first:
+      1: 100050
+    second: Ctrl_Left Middle03
+  - first:
+      1: 100052
+    second: Ctrl_Left Middle04
+  - first:
+      1: 100054
+    second: Ctrl_Left Pinky01
+  - first:
+      1: 100056
+    second: Ctrl_Left Pinky02
+  - first:
+      1: 100058
+    second: Ctrl_Left Pinky03
+  - first:
+      1: 100060
+    second: Ctrl_Left Pinky04
+  - first:
+      1: 100062
+    second: Ctrl_Left Ring01
+  - first:
+      1: 100064
+    second: Ctrl_Left Ring02
+  - first:
+      1: 100066
+    second: Ctrl_Left Ring03
+  - first:
+      1: 100068
+    second: Ctrl_Left Ring04
+  - first:
+      1: 100070
+    second: Ctrl_Left Thumb01
+  - first:
+      1: 100072
+    second: Ctrl_Left Thumb02
+  - first:
+      1: 100074
+    second: Ctrl_Left Toe01
+  - first:
+      1: 100076
+    second: Ctrl_Left Toe02
+  - first:
+      1: 100078
+    second: Ctrl_Left Toe03
+  - first:
+      1: 100080
+    second: Ctrl_Low Jaw
+  - first:
+      1: 100082
+    second: Ctrl_Right Arm01
+  - first:
+      1: 100084
+    second: Ctrl_Right Arm02
+  - first:
+      1: 100086
+    second: Ctrl_Right Big Toe01
+  - first:
+      1: 100088
+    second: Ctrl_Right Big Toe02
+  - first:
+      1: 100090
+    second: Ctrl_Right Big Toe03
+  - first:
+      1: 100092
+    second: Ctrl_Right Eye01
+  - first:
+      1: 100094
+    second: Ctrl_Right Femur
+  - first:
+      1: 100096
+    second: Ctrl_Right Hand01
+  - first:
+      1: 100098
+    second: Ctrl_Right Index01
+  - first:
+      1: 100100
+    second: Ctrl_Right Index02
+  - first:
+      1: 100102
+    second: Ctrl_Right Index03
+  - first:
+      1: 100104
+    second: Ctrl_Right Index04
+  - first:
+      1: 100106
+    second: Ctrl_Right Leg
+  - first:
+      1: 100108
+    second: Ctrl_Right Little Toe
+  - first:
+      1: 100110
+    second: Ctrl_Right Little Toe01
+  - first:
+      1: 100112
+    second: Ctrl_Right Little Toe02
+  - first:
+      1: 100114
+    second: Ctrl_Right Middle Toe01
+  - first:
+      1: 100116
+    second: Ctrl_Right Middle Toe02
+  - first:
+      1: 100118
+    second: Ctrl_Right Middle Toe03
+  - first:
+      1: 100120
+    second: Ctrl_Right Middle01
+  - first:
+      1: 100122
+    second: Ctrl_Right Middle02
+  - first:
+      1: 100124
+    second: Ctrl_Right Middle03
+  - first:
+      1: 100126
+    second: Ctrl_Right Middle04
+  - first:
+      1: 100128
+    second: Ctrl_Right Pinky01
+  - first:
+      1: 100130
+    second: Ctrl_Right Pinky02
+  - first:
+      1: 100132
+    second: Ctrl_Right Pinky03
+  - first:
+      1: 100134
+    second: Ctrl_Right Pinky04
+  - first:
+      1: 100136
+    second: Ctrl_Right Ring01
+  - first:
+      1: 100138
+    second: Ctrl_Right Ring02
+  - first:
+      1: 100140
+    second: Ctrl_Right Ring03
+  - first:
+      1: 100142
+    second: Ctrl_Right Ring04
+  - first:
+      1: 100144
+    second: Ctrl_Right Thumb01
+  - first:
+      1: 100146
+    second: Ctrl_Right Thumb02
+  - first:
+      1: 100148
+    second: Ctrl_Right Toe01
+  - first:
+      1: 100150
+    second: Ctrl_Right Toe02
+  - first:
+      1: 100152
+    second: Ctrl_Right Toe03
+  - first:
+      1: 100154
+    second: Ctrl_Spine01
+  - first:
+      1: 100156
+    second: Ctrl_Spine02
+  - first:
+      1: 100158
+    second: Ctrl_Spine03
+  - first:
+      1: 100160
+    second: Ctrl_Spine04
+  - first:
+      1: 100162
+    second: Ctrl_Spine05
+  - first:
+      1: 100164
+    second: Ctrl_Spine06
+  - first:
+      1: 100166
+    second: Ctrl_Tai12
+  - first:
+      1: 100168
+    second: Ctrl_Tail01
+  - first:
+      1: 100170
+    second: Ctrl_Tail02
+  - first:
+      1: 100172
+    second: Ctrl_Tail03
+  - first:
+      1: 100174
+    second: Ctrl_Tail04
+  - first:
+      1: 100176
+    second: Ctrl_Tail05
+  - first:
+      1: 100178
+    second: Ctrl_Tail06
+  - first:
+      1: 100180
+    second: Ctrl_Tail07
+  - first:
+      1: 100182
+    second: Ctrl_Tail08
+  - first:
+      1: 100184
+    second: Ctrl_Tail09
+  - first:
+      1: 100186
+    second: Ctrl_Tail10
+  - first:
+      1: 100188
+    second: Ctrl_Tail11
+  - first:
+      1: 100190
+    second: Ctrl_Tail13
+  - first:
+      1: 100192
+    second: Ctrl_Tail14
+  - first:
+      1: 100194
+    second: Ctrl_Tail15
+  - first:
+      1: 100196
+    second: Ctrl_Tail16
+  - first:
+      1: 100198
+    second: Ctrl_Tail17
+  - first:
+      1: 100200
+    second: Ctrl_Tail18
+  - first:
+      1: 100202
+    second: Ctrl_Tail19
+  - first:
+      1: 100204
+    second: Ctrl_Tail20
+  - first:
+      1: 100206
+    second: Ctrl_Tail21
+  - first:
+      1: 100208
+    second: Ctrl_Tail22
+  - first:
+      1: 100210
+    second: Ctrl_Tail23
+  - first:
+      1: 100212
+    second: Ctrl_Upper Jaw
+  - first:
+      1: 100214
+    second: Foot Left Point Helper
+  - first:
+      1: 100216
+    second: Foot Right Point Helper
+  - first:
+      1: 100218
+    second: Head jnt
+  - first:
+      1: 100220
+    second: Head Tip jnt
+  - first:
+      1: 100222
+    second: IK Chain001
+  - first:
+      1: 100224
+    second: IK Chain003
+  - first:
+      1: 100226
+    second: IK Chain005
+  - first:
+      1: 100228
+    second: IK Chain006
+  - first:
+      1: 100230
+    second: Left Arm01 jnt
+  - first:
+      1: 100232
+    second: Left Arm02 jnt
+  - first:
+      1: 100234
+    second: Left Big Toe Tip jnt
+  - first:
+      1: 100236
+    second: Left Big Toe01 jnt
+  - first:
+      1: 100238
+    second: Left Big Toe02 jnt
+  - first:
+      1: 100240
+    second: Left Big Toe03 jnt
+  - first:
+      1: 100242
+    second: Left Eye Tip jnt
+  - first:
+      1: 100244
+    second: Left Eye01 jnt
+  - first:
+      1: 100246
+    second: Left Foot jnt
+  - first:
+      1: 100248
+    second: Left Hand01 jnt
+  - first:
+      1: 100250
+    second: Left Index Tip jnt
+  - first:
+      1: 100252
+    second: Left Index01 jnt
+  - first:
+      1: 100254
+    second: Left Index02 jnt
+  - first:
+      1: 100256
+    second: Left Index03 jnt
+  - first:
+      1: 100258
+    second: Left Index04 jnt
+  - first:
+      1: 100260
+    second: Left Leg01 jnt
+  - first:
+      1: 100262
+    second: Left Leg02 jnt
+  - first:
+      1: 100264
+    second: Left Leg03 jnt
+  - first:
+      1: 100266
+    second: Left Little Toe Tip jnt
+  - first:
+      1: 100268
+    second: Left Little Toe01 jnt
+  - first:
+      1: 100270
+    second: Left Little Toe02 jnt
+  - first:
+      1: 100272
+    second: Left Little Toe03 jnt
+  - first:
+      1: 100274
+    second: Left Middle Tip jnt
+  - first:
+      1: 100276
+    second: Left Middle Toe Tip jnt
+  - first:
+      1: 100278
+    second: Left Middle Toe01 jnt
+  - first:
+      1: 100280
+    second: Left Middle Toe02 jnt
+  - first:
+      1: 100282
+    second: Left Middle Toe03 jnt
+  - first:
+      1: 100284
+    second: Left Middle01 jnt
+  - first:
+      1: 100286
+    second: Left Middle02 jnt
+  - first:
+      1: 100288
+    second: Left Middle03 jnt
+  - first:
+      1: 100290
+    second: Left Middle04 jnt
+  - first:
+      1: 100292
+    second: Left Pinky Tip jnt
+  - first:
+      1: 100294
+    second: Left Pinky01 jnt
+  - first:
+      1: 100296
+    second: Left Pinky02 jnt
+  - first:
+      1: 100298
+    second: Left Pinky03 jnt
+  - first:
+      1: 100300
+    second: Left Pinky04 jnt
+  - first:
+      1: 100302
+    second: Left Ring Tip jnt
+  - first:
+      1: 100304
+    second: Left Ring01 jnt
+  - first:
+      1: 100306
+    second: Left Ring02 jnt
+  - first:
+      1: 100308
+    second: Left Ring03 jnt
+  - first:
+      1: 100310
+    second: Left Ring04 jnt
+  - first:
+      1: 100312
+    second: Left Thumb Tip jnt
+  - first:
+      1: 100314
+    second: Left Thumb01 jnt
+  - first:
+      1: 100316
+    second: Left Thumb02 jnt
+  - first:
+      1: 100318
+    second: Left Toe Tip jnt
+  - first:
+      1: 100320
+    second: Left Toe01 jnt
+  - first:
+      1: 100322
+    second: Left Toe02 jnt
+  - first:
+      1: 100324
+    second: Left Toe03 jnt
+  - first:
+      1: 100326
+    second: Low Jaw Tip jnt
+  - first:
+      1: 100328
+    second: Low Jaw01 jnt
+  - first:
+      1: 100330
+    second: Monkey
+  - first:
+      1: 100332
+    second: //RootNode
+  - first:
+      1: 100334
+    second: Right Arm01 jnt
+  - first:
+      1: 100336
+    second: Right Arm02 jnt
+  - first:
+      1: 100338
+    second: Right Big Toe Tip jnt
+  - first:
+      1: 100340
+    second: Right Big Toe01 jnt
+  - first:
+      1: 100342
+    second: Right Big Toe02 jnt
+  - first:
+      1: 100344
+    second: Right Big Toe03 jnt
+  - first:
+      1: 100346
+    second: Right Eye Tip jnt
+  - first:
+      1: 100348
+    second: Right Eye01 jnt
+  - first:
+      1: 100350
+    second: Right Foot jnt
+  - first:
+      1: 100352
+    second: Right Hand01 jnt
+  - first:
+      1: 100354
+    second: Right Index Tip jnt
+  - first:
+      1: 100356
+    second: Right Index01 jnt
+  - first:
+      1: 100358
+    second: Right Index02 jnt
+  - first:
+      1: 100360
+    second: Right Index03 jnt
+  - first:
+      1: 100362
+    second: Right Index04 jnt
+  - first:
+      1: 100364
+    second: Right Leg01 jnt
+  - first:
+      1: 100366
+    second: Right Leg02 jnt
+  - first:
+      1: 100368
+    second: Right Leg03 jnt
+  - first:
+      1: 100370
+    second: Right Little Toe Tip jnt
+  - first:
+      1: 100372
+    second: Right Little Toe01 jnt
+  - first:
+      1: 100374
+    second: Right Little Toe02 jnt
+  - first:
+      1: 100376
+    second: Right Little Toe03 jnt
+  - first:
+      1: 100378
+    second: Right Middle Tip jnt
+  - first:
+      1: 100380
+    second: Right Middle Toe Tip jnt
+  - first:
+      1: 100382
+    second: Right Middle Toe01 jnt
+  - first:
+      1: 100384
+    second: Right Middle Toe02 jnt
+  - first:
+      1: 100386
+    second: Right Middle Toe03 jnt
+  - first:
+      1: 100388
+    second: Right Middle01 jnt
+  - first:
+      1: 100390
+    second: Right Middle02 jnt
+  - first:
+      1: 100392
+    second: Right Middle03 jnt
+  - first:
+      1: 100394
+    second: Right Middle04 jnt
+  - first:
+      1: 100396
+    second: Right Pinky Tip jnt
+  - first:
+      1: 100398
+    second: Right Pinky01 jnt
+  - first:
+      1: 100400
+    second: Right Pinky02 jnt
+  - first:
+      1: 100402
+    second: Right Pinky03 jnt
+  - first:
+      1: 100404
+    second: Right Pinky04 jnt
+  - first:
+      1: 100406
+    second: Right Ring Tip jnt
+  - first:
+      1: 100408
+    second: Right Ring01 jnt
+  - first:
+      1: 100410
+    second: Right Ring02 jnt
+  - first:
+      1: 100412
+    second: Right Ring03 jnt
+  - first:
+      1: 100414
+    second: Right Ring04 jnt
+  - first:
+      1: 100416
+    second: Right Thumb Tip jnt
+  - first:
+      1: 100418
+    second: Right Thumb01 jnt
+  - first:
+      1: 100420
+    second: Right Thumb02 jnt
+  - first:
+      1: 100422
+    second: Right Toe Tip jnt
+  - first:
+      1: 100424
+    second: Right Toe01 jnt
+  - first:
+      1: 100426
+    second: Right Toe02 jnt
+  - first:
+      1: 100428
+    second: Right Toe03 jnt
+  - first:
+      1: 100430
+    second: Root Point Helper
+  - first:
+      1: 100432
+    second: Spine01 jnt
+  - first:
+      1: 100434
+    second: Spine02 jnt
+  - first:
+      1: 100436
+    second: Spine03 jnt
+  - first:
+      1: 100438
+    second: Spine04 jnt
+  - first:
+      1: 100440
+    second: Spine05 jnt
+  - first:
+      1: 100442
+    second: Spine06 jnt
+  - first:
+      1: 100444
+    second: Tail Tip jnt
+  - first:
+      1: 100446
+    second: Tail01 jnt
+  - first:
+      1: 100448
+    second: Tail02 jnt
+  - first:
+      1: 100450
+    second: Tail03 jnt
+  - first:
+      1: 100452
+    second: Tail04 jnt
+  - first:
+      1: 100454
+    second: Tail05 jnt
+  - first:
+      1: 100456
+    second: Tail06 jnt
+  - first:
+      1: 100458
+    second: Tail07 jnt
+  - first:
+      1: 100460
+    second: Tail08 jnt
+  - first:
+      1: 100462
+    second: Tail09 jnt
+  - first:
+      1: 100464
+    second: Tail10 jnt
+  - first:
+      1: 100466
+    second: Tail11 jnt
+  - first:
+      1: 100468
+    second: Tail12 jnt
+  - first:
+      1: 100470
+    second: Tail13 jnt
+  - first:
+      1: 100472
+    second: Tail14 jnt
+  - first:
+      1: 100474
+    second: Tail15 jnt
+  - first:
+      1: 100476
+    second: Tail16 jnt
+  - first:
+      1: 100478
+    second: Tail17 jnt
+  - first:
+      1: 100480
+    second: Tail18 jnt
+  - first:
+      1: 100482
+    second: Tail19 jnt
+  - first:
+      1: 100484
+    second: Tail20 jnt
+  - first:
+      1: 100486
+    second: Tail21 jnt
+  - first:
+      1: 100488
+    second: Tail22 jnt
+  - first:
+      1: 100490
+    second: Tail23 jnt
+  - first:
+      1: 100492
+    second: Upper Jaw Tip jnt
+  - first:
+      1: 100494
+    second: Upper Jaw01 jnt
+  - first:
+      4: 400000
+    second: Ctrl_ Right Foot
+  - first:
+      4: 400002
+    second: Ctrl_General
+  - first:
+      4: 400004
+    second: Ctrl_Head
+  - first:
+      4: 400006
+    second: Ctrl_Left Arm01
+  - first:
+      4: 400008
+    second: Ctrl_Left Arm02
+  - first:
+      4: 400010
+    second: Ctrl_Left Big Toe01
+  - first:
+      4: 400012
+    second: Ctrl_Left Big Toe02
+  - first:
+      4: 400014
+    second: Ctrl_Left Big Toe03
+  - first:
+      4: 400016
+    second: Ctrl_Left Eye01
+  - first:
+      4: 400018
+    second: Ctrl_Left Femur
+  - first:
+      4: 400020
+    second: Ctrl_Left Foot
+  - first:
+      4: 400022
+    second: Ctrl_Left Hand01
+  - first:
+      4: 400024
+    second: Ctrl_Left Index01
+  - first:
+      4: 400026
+    second: Ctrl_Left Index02
+  - first:
+      4: 400028
+    second: Ctrl_Left Index03
+  - first:
+      4: 400030
+    second: Ctrl_Left Index04
+  - first:
+      4: 400032
+    second: Ctrl_Left Leg
+  - first:
+      4: 400034
+    second: Ctrl_Left Little Toe01
+  - first:
+      4: 400036
+    second: Ctrl_Left Little Toe02
+  - first:
+      4: 400038
+    second: Ctrl_Left Little Toe03
+  - first:
+      4: 400040
+    second: Ctrl_Left Middle Toe01
+  - first:
+      4: 400042
+    second: Ctrl_Left Middle Toe02
+  - first:
+      4: 400044
+    second: Ctrl_Left Middle Toe03
+  - first:
+      4: 400046
+    second: Ctrl_Left Middle01
+  - first:
+      4: 400048
+    second: Ctrl_Left Middle02
+  - first:
+      4: 400050
+    second: Ctrl_Left Middle03
+  - first:
+      4: 400052
+    second: Ctrl_Left Middle04
+  - first:
+      4: 400054
+    second: Ctrl_Left Pinky01
+  - first:
+      4: 400056
+    second: Ctrl_Left Pinky02
+  - first:
+      4: 400058
+    second: Ctrl_Left Pinky03
+  - first:
+      4: 400060
+    second: Ctrl_Left Pinky04
+  - first:
+      4: 400062
+    second: Ctrl_Left Ring01
+  - first:
+      4: 400064
+    second: Ctrl_Left Ring02
+  - first:
+      4: 400066
+    second: Ctrl_Left Ring03
+  - first:
+      4: 400068
+    second: Ctrl_Left Ring04
+  - first:
+      4: 400070
+    second: Ctrl_Left Thumb01
+  - first:
+      4: 400072
+    second: Ctrl_Left Thumb02
+  - first:
+      4: 400074
+    second: Ctrl_Left Toe01
+  - first:
+      4: 400076
+    second: Ctrl_Left Toe02
+  - first:
+      4: 400078
+    second: Ctrl_Left Toe03
+  - first:
+      4: 400080
+    second: Ctrl_Low Jaw
+  - first:
+      4: 400082
+    second: Ctrl_Right Arm01
+  - first:
+      4: 400084
+    second: Ctrl_Right Arm02
+  - first:
+      4: 400086
+    second: Ctrl_Right Big Toe01
+  - first:
+      4: 400088
+    second: Ctrl_Right Big Toe02
+  - first:
+      4: 400090
+    second: Ctrl_Right Big Toe03
+  - first:
+      4: 400092
+    second: Ctrl_Right Eye01
+  - first:
+      4: 400094
+    second: Ctrl_Right Femur
+  - first:
+      4: 400096
+    second: Ctrl_Right Hand01
+  - first:
+      4: 400098
+    second: Ctrl_Right Index01
+  - first:
+      4: 400100
+    second: Ctrl_Right Index02
+  - first:
+      4: 400102
+    second: Ctrl_Right Index03
+  - first:
+      4: 400104
+    second: Ctrl_Right Index04
+  - first:
+      4: 400106
+    second: Ctrl_Right Leg
+  - first:
+      4: 400108
+    second: Ctrl_Right Little Toe
+  - first:
+      4: 400110
+    second: Ctrl_Right Little Toe01
+  - first:
+      4: 400112
+    second: Ctrl_Right Little Toe02
+  - first:
+      4: 400114
+    second: Ctrl_Right Middle Toe01
+  - first:
+      4: 400116
+    second: Ctrl_Right Middle Toe02
+  - first:
+      4: 400118
+    second: Ctrl_Right Middle Toe03
+  - first:
+      4: 400120
+    second: Ctrl_Right Middle01
+  - first:
+      4: 400122
+    second: Ctrl_Right Middle02
+  - first:
+      4: 400124
+    second: Ctrl_Right Middle03
+  - first:
+      4: 400126
+    second: Ctrl_Right Middle04
+  - first:
+      4: 400128
+    second: Ctrl_Right Pinky01
+  - first:
+      4: 400130
+    second: Ctrl_Right Pinky02
+  - first:
+      4: 400132
+    second: Ctrl_Right Pinky03
+  - first:
+      4: 400134
+    second: Ctrl_Right Pinky04
+  - first:
+      4: 400136
+    second: Ctrl_Right Ring01
+  - first:
+      4: 400138
+    second: Ctrl_Right Ring02
+  - first:
+      4: 400140
+    second: Ctrl_Right Ring03
+  - first:
+      4: 400142
+    second: Ctrl_Right Ring04
+  - first:
+      4: 400144
+    second: Ctrl_Right Thumb01
+  - first:
+      4: 400146
+    second: Ctrl_Right Thumb02
+  - first:
+      4: 400148
+    second: Ctrl_Right Toe01
+  - first:
+      4: 400150
+    second: Ctrl_Right Toe02
+  - first:
+      4: 400152
+    second: Ctrl_Right Toe03
+  - first:
+      4: 400154
+    second: Ctrl_Spine01
+  - first:
+      4: 400156
+    second: Ctrl_Spine02
+  - first:
+      4: 400158
+    second: Ctrl_Spine03
+  - first:
+      4: 400160
+    second: Ctrl_Spine04
+  - first:
+      4: 400162
+    second: Ctrl_Spine05
+  - first:
+      4: 400164
+    second: Ctrl_Spine06
+  - first:
+      4: 400166
+    second: Ctrl_Tai12
+  - first:
+      4: 400168
+    second: Ctrl_Tail01
+  - first:
+      4: 400170
+    second: Ctrl_Tail02
+  - first:
+      4: 400172
+    second: Ctrl_Tail03
+  - first:
+      4: 400174
+    second: Ctrl_Tail04
+  - first:
+      4: 400176
+    second: Ctrl_Tail05
+  - first:
+      4: 400178
+    second: Ctrl_Tail06
+  - first:
+      4: 400180
+    second: Ctrl_Tail07
+  - first:
+      4: 400182
+    second: Ctrl_Tail08
+  - first:
+      4: 400184
+    second: Ctrl_Tail09
+  - first:
+      4: 400186
+    second: Ctrl_Tail10
+  - first:
+      4: 400188
+    second: Ctrl_Tail11
+  - first:
+      4: 400190
+    second: Ctrl_Tail13
+  - first:
+      4: 400192
+    second: Ctrl_Tail14
+  - first:
+      4: 400194
+    second: Ctrl_Tail15
+  - first:
+      4: 400196
+    second: Ctrl_Tail16
+  - first:
+      4: 400198
+    second: Ctrl_Tail17
+  - first:
+      4: 400200
+    second: Ctrl_Tail18
+  - first:
+      4: 400202
+    second: Ctrl_Tail19
+  - first:
+      4: 400204
+    second: Ctrl_Tail20
+  - first:
+      4: 400206
+    second: Ctrl_Tail21
+  - first:
+      4: 400208
+    second: Ctrl_Tail22
+  - first:
+      4: 400210
+    second: Ctrl_Tail23
+  - first:
+      4: 400212
+    second: Ctrl_Upper Jaw
+  - first:
+      4: 400214
+    second: Foot Left Point Helper
+  - first:
+      4: 400216
+    second: Foot Right Point Helper
+  - first:
+      4: 400218
+    second: Head jnt
+  - first:
+      4: 400220
+    second: Head Tip jnt
+  - first:
+      4: 400222
+    second: IK Chain001
+  - first:
+      4: 400224
+    second: IK Chain003
+  - first:
+      4: 400226
+    second: IK Chain005
+  - first:
+      4: 400228
+    second: IK Chain006
+  - first:
+      4: 400230
+    second: Left Arm01 jnt
+  - first:
+      4: 400232
+    second: Left Arm02 jnt
+  - first:
+      4: 400234
+    second: Left Big Toe Tip jnt
+  - first:
+      4: 400236
+    second: Left Big Toe01 jnt
+  - first:
+      4: 400238
+    second: Left Big Toe02 jnt
+  - first:
+      4: 400240
+    second: Left Big Toe03 jnt
+  - first:
+      4: 400242
+    second: Left Eye Tip jnt
+  - first:
+      4: 400244
+    second: Left Eye01 jnt
+  - first:
+      4: 400246
+    second: Left Foot jnt
+  - first:
+      4: 400248
+    second: Left Hand01 jnt
+  - first:
+      4: 400250
+    second: Left Index Tip jnt
+  - first:
+      4: 400252
+    second: Left Index01 jnt
+  - first:
+      4: 400254
+    second: Left Index02 jnt
+  - first:
+      4: 400256
+    second: Left Index03 jnt
+  - first:
+      4: 400258
+    second: Left Index04 jnt
+  - first:
+      4: 400260
+    second: Left Leg01 jnt
+  - first:
+      4: 400262
+    second: Left Leg02 jnt
+  - first:
+      4: 400264
+    second: Left Leg03 jnt
+  - first:
+      4: 400266
+    second: Left Little Toe Tip jnt
+  - first:
+      4: 400268
+    second: Left Little Toe01 jnt
+  - first:
+      4: 400270
+    second: Left Little Toe02 jnt
+  - first:
+      4: 400272
+    second: Left Little Toe03 jnt
+  - first:
+      4: 400274
+    second: Left Middle Tip jnt
+  - first:
+      4: 400276
+    second: Left Middle Toe Tip jnt
+  - first:
+      4: 400278
+    second: Left Middle Toe01 jnt
+  - first:
+      4: 400280
+    second: Left Middle Toe02 jnt
+  - first:
+      4: 400282
+    second: Left Middle Toe03 jnt
+  - first:
+      4: 400284
+    second: Left Middle01 jnt
+  - first:
+      4: 400286
+    second: Left Middle02 jnt
+  - first:
+      4: 400288
+    second: Left Middle03 jnt
+  - first:
+      4: 400290
+    second: Left Middle04 jnt
+  - first:
+      4: 400292
+    second: Left Pinky Tip jnt
+  - first:
+      4: 400294
+    second: Left Pinky01 jnt
+  - first:
+      4: 400296
+    second: Left Pinky02 jnt
+  - first:
+      4: 400298
+    second: Left Pinky03 jnt
+  - first:
+      4: 400300
+    second: Left Pinky04 jnt
+  - first:
+      4: 400302
+    second: Left Ring Tip jnt
+  - first:
+      4: 400304
+    second: Left Ring01 jnt
+  - first:
+      4: 400306
+    second: Left Ring02 jnt
+  - first:
+      4: 400308
+    second: Left Ring03 jnt
+  - first:
+      4: 400310
+    second: Left Ring04 jnt
+  - first:
+      4: 400312
+    second: Left Thumb Tip jnt
+  - first:
+      4: 400314
+    second: Left Thumb01 jnt
+  - first:
+      4: 400316
+    second: Left Thumb02 jnt
+  - first:
+      4: 400318
+    second: Left Toe Tip jnt
+  - first:
+      4: 400320
+    second: Left Toe01 jnt
+  - first:
+      4: 400322
+    second: Left Toe02 jnt
+  - first:
+      4: 400324
+    second: Left Toe03 jnt
+  - first:
+      4: 400326
+    second: Low Jaw Tip jnt
+  - first:
+      4: 400328
+    second: Low Jaw01 jnt
+  - first:
+      4: 400330
+    second: Monkey
+  - first:
+      4: 400332
+    second: //RootNode
+  - first:
+      4: 400334
+    second: Right Arm01 jnt
+  - first:
+      4: 400336
+    second: Right Arm02 jnt
+  - first:
+      4: 400338
+    second: Right Big Toe Tip jnt
+  - first:
+      4: 400340
+    second: Right Big Toe01 jnt
+  - first:
+      4: 400342
+    second: Right Big Toe02 jnt
+  - first:
+      4: 400344
+    second: Right Big Toe03 jnt
+  - first:
+      4: 400346
+    second: Right Eye Tip jnt
+  - first:
+      4: 400348
+    second: Right Eye01 jnt
+  - first:
+      4: 400350
+    second: Right Foot jnt
+  - first:
+      4: 400352
+    second: Right Hand01 jnt
+  - first:
+      4: 400354
+    second: Right Index Tip jnt
+  - first:
+      4: 400356
+    second: Right Index01 jnt
+  - first:
+      4: 400358
+    second: Right Index02 jnt
+  - first:
+      4: 400360
+    second: Right Index03 jnt
+  - first:
+      4: 400362
+    second: Right Index04 jnt
+  - first:
+      4: 400364
+    second: Right Leg01 jnt
+  - first:
+      4: 400366
+    second: Right Leg02 jnt
+  - first:
+      4: 400368
+    second: Right Leg03 jnt
+  - first:
+      4: 400370
+    second: Right Little Toe Tip jnt
+  - first:
+      4: 400372
+    second: Right Little Toe01 jnt
+  - first:
+      4: 400374
+    second: Right Little Toe02 jnt
+  - first:
+      4: 400376
+    second: Right Little Toe03 jnt
+  - first:
+      4: 400378
+    second: Right Middle Tip jnt
+  - first:
+      4: 400380
+    second: Right Middle Toe Tip jnt
+  - first:
+      4: 400382
+    second: Right Middle Toe01 jnt
+  - first:
+      4: 400384
+    second: Right Middle Toe02 jnt
+  - first:
+      4: 400386
+    second: Right Middle Toe03 jnt
+  - first:
+      4: 400388
+    second: Right Middle01 jnt
+  - first:
+      4: 400390
+    second: Right Middle02 jnt
+  - first:
+      4: 400392
+    second: Right Middle03 jnt
+  - first:
+      4: 400394
+    second: Right Middle04 jnt
+  - first:
+      4: 400396
+    second: Right Pinky Tip jnt
+  - first:
+      4: 400398
+    second: Right Pinky01 jnt
+  - first:
+      4: 400400
+    second: Right Pinky02 jnt
+  - first:
+      4: 400402
+    second: Right Pinky03 jnt
+  - first:
+      4: 400404
+    second: Right Pinky04 jnt
+  - first:
+      4: 400406
+    second: Right Ring Tip jnt
+  - first:
+      4: 400408
+    second: Right Ring01 jnt
+  - first:
+      4: 400410
+    second: Right Ring02 jnt
+  - first:
+      4: 400412
+    second: Right Ring03 jnt
+  - first:
+      4: 400414
+    second: Right Ring04 jnt
+  - first:
+      4: 400416
+    second: Right Thumb Tip jnt
+  - first:
+      4: 400418
+    second: Right Thumb01 jnt
+  - first:
+      4: 400420
+    second: Right Thumb02 jnt
+  - first:
+      4: 400422
+    second: Right Toe Tip jnt
+  - first:
+      4: 400424
+    second: Right Toe01 jnt
+  - first:
+      4: 400426
+    second: Right Toe02 jnt
+  - first:
+      4: 400428
+    second: Right Toe03 jnt
+  - first:
+      4: 400430
+    second: Root Point Helper
+  - first:
+      4: 400432
+    second: Spine01 jnt
+  - first:
+      4: 400434
+    second: Spine02 jnt
+  - first:
+      4: 400436
+    second: Spine03 jnt
+  - first:
+      4: 400438
+    second: Spine04 jnt
+  - first:
+      4: 400440
+    second: Spine05 jnt
+  - first:
+      4: 400442
+    second: Spine06 jnt
+  - first:
+      4: 400444
+    second: Tail Tip jnt
+  - first:
+      4: 400446
+    second: Tail01 jnt
+  - first:
+      4: 400448
+    second: Tail02 jnt
+  - first:
+      4: 400450
+    second: Tail03 jnt
+  - first:
+      4: 400452
+    second: Tail04 jnt
+  - first:
+      4: 400454
+    second: Tail05 jnt
+  - first:
+      4: 400456
+    second: Tail06 jnt
+  - first:
+      4: 400458
+    second: Tail07 jnt
+  - first:
+      4: 400460
+    second: Tail08 jnt
+  - first:
+      4: 400462
+    second: Tail09 jnt
+  - first:
+      4: 400464
+    second: Tail10 jnt
+  - first:
+      4: 400466
+    second: Tail11 jnt
+  - first:
+      4: 400468
+    second: Tail12 jnt
+  - first:
+      4: 400470
+    second: Tail13 jnt
+  - first:
+      4: 400472
+    second: Tail14 jnt
+  - first:
+      4: 400474
+    second: Tail15 jnt
+  - first:
+      4: 400476
+    second: Tail16 jnt
+  - first:
+      4: 400478
+    second: Tail17 jnt
+  - first:
+      4: 400480
+    second: Tail18 jnt
+  - first:
+      4: 400482
+    second: Tail19 jnt
+  - first:
+      4: 400484
+    second: Tail20 jnt
+  - first:
+      4: 400486
+    second: Tail21 jnt
+  - first:
+      4: 400488
+    second: Tail22 jnt
+  - first:
+      4: 400490
+    second: Tail23 jnt
+  - first:
+      4: 400492
+    second: Upper Jaw Tip jnt
+  - first:
+      4: 400494
+    second: Upper Jaw01 jnt
+  - first:
+      43: 4300000
+    second: Monkey
+  - first:
+      74: 7400000
+    second: run
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Monkey
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 27
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ctrl_General
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Femur
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Femur/IK Chain003
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Big Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Big Toe01/Ctrl_Left
+          Big Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Big Toe01/Ctrl_Left
+          Big Toe02/Ctrl_Left Big Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Little Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Little Toe01/Ctrl_Left
+          Little Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Little Toe01/Ctrl_Left
+          Little Toe02/Ctrl_Left Little Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Middle Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Middle Toe01/Ctrl_Left
+          Middle Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Middle Toe01/Ctrl_Left
+          Middle Toe02/Ctrl_Left Middle Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Toe01/Ctrl_Left
+          Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Ctrl_Left Foot/Ctrl_Left Toe01/Ctrl_Left
+          Toe02/Ctrl_Left Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Foot Left Point Helper
+        weight: 1
+      - path: Ctrl_General/Ctrl_Left Leg/Foot Left Point Helper/IK Chain006
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Femur
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Femur/IK Chain001
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Big Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Big Toe01/Ctrl_Right
+          Big Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Big Toe01/Ctrl_Right
+          Big Toe02/Ctrl_Right Big Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Little Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Little Toe01/Ctrl_Right
+          Little Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Little Toe01/Ctrl_Right
+          Little Toe02/Ctrl_Right Little Toe
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Middle Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Middle Toe01/Ctrl_Right
+          Middle Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Middle Toe01/Ctrl_Right
+          Middle Toe02/Ctrl_Right Middle Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Toe01
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Toe01/Ctrl_Right
+          Toe02
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Ctrl_ Right Foot/Ctrl_Right Toe01/Ctrl_Right
+          Toe02/Ctrl_Right Toe03
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Foot Right Point Helper
+        weight: 1
+      - path: Ctrl_General/Ctrl_Right Leg/Foot Right Point Helper/IK Chain005
+        weight: 1
+      - path: Ctrl_General/Root Point Helper
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Head
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Head/Ctrl_Left
+          Eye01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Head/Ctrl_Low
+          Jaw
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Head/Ctrl_Right
+          Eye01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Head/Ctrl_Upper
+          Jaw
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Index01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Index01/Ctrl_Left Index02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Index01/Ctrl_Left Index02/Ctrl_Left
+          Index03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Index01/Ctrl_Left Index02/Ctrl_Left
+          Index03/Ctrl_Left Index04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Middle01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Middle01/Ctrl_Left Middle02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Middle01/Ctrl_Left Middle02/Ctrl_Left
+          Middle03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Middle01/Ctrl_Left Middle02/Ctrl_Left
+          Middle03/Ctrl_Left Middle04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Pinky01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Pinky01/Ctrl_Left Pinky02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Pinky01/Ctrl_Left Pinky02/Ctrl_Left
+          Pinky03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Pinky01/Ctrl_Left Pinky02/Ctrl_Left
+          Pinky03/Ctrl_Left Pinky04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Ring01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Ring01/Ctrl_Left Ring02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Ring01/Ctrl_Left Ring02/Ctrl_Left
+          Ring03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Ring01/Ctrl_Left Ring02/Ctrl_Left
+          Ring03/Ctrl_Left Ring04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Thumb01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Left
+          Arm01/Ctrl_Left Arm02/Ctrl_Left Hand01/Ctrl_Left Thumb01/Ctrl_Left Thumb02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Index01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Index01/Ctrl_Right
+          Index02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Index01/Ctrl_Right
+          Index02/Ctrl_Right Index03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Index01/Ctrl_Right
+          Index02/Ctrl_Right Index03/Ctrl_Right Index04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Middle01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Middle01/Ctrl_Right
+          Middle02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Middle01/Ctrl_Right
+          Middle02/Ctrl_Right Middle03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Middle01/Ctrl_Right
+          Middle02/Ctrl_Right Middle03/Ctrl_Right Middle04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Pinky01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Pinky01/Ctrl_Right
+          Pinky02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Pinky01/Ctrl_Right
+          Pinky02/Ctrl_Right Pinky03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Pinky01/Ctrl_Right
+          Pinky02/Ctrl_Right Pinky03/Ctrl_Right Pinky04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Ring01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Ring01/Ctrl_Right Ring02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Ring01/Ctrl_Right Ring02/Ctrl_Right
+          Ring03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Ring01/Ctrl_Right Ring02/Ctrl_Right
+          Ring03/Ctrl_Right Ring04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Thumb01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Spine01/Ctrl_Spine02/Ctrl_Spine03/Ctrl_Spine04/Ctrl_Spine05/Ctrl_Spine06/Ctrl_Right
+          Arm01/Ctrl_Right Arm02/Ctrl_Right Hand01/Ctrl_Right Thumb01/Ctrl_Right
+          Thumb02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17/Ctrl_Tail18
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17/Ctrl_Tail18/Ctrl_Tail19
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17/Ctrl_Tail18/Ctrl_Tail19/Ctrl_Tail20
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17/Ctrl_Tail18/Ctrl_Tail19/Ctrl_Tail20/Ctrl_Tail21
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17/Ctrl_Tail18/Ctrl_Tail19/Ctrl_Tail20/Ctrl_Tail21/Ctrl_Tail22
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Ctrl_Tail01/Ctrl_Tail02/Ctrl_Tail03/Ctrl_Tail04/Ctrl_Tail05/Ctrl_Tail06/Ctrl_Tail07/Ctrl_Tail08/Ctrl_Tail09/Ctrl_Tail10/Ctrl_Tail11/Ctrl_Tai12/Ctrl_Tail13/Ctrl_Tail14/Ctrl_Tail15/Ctrl_Tail16/Ctrl_Tail17/Ctrl_Tail18/Ctrl_Tail19/Ctrl_Tail20/Ctrl_Tail21/Ctrl_Tail22/Ctrl_Tail23
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Big Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Big Toe01 jnt/Left Big Toe02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Big Toe01 jnt/Left Big Toe02 jnt/Left
+          Big Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Big Toe01 jnt/Left Big Toe02 jnt/Left
+          Big Toe03 jnt/Left Big Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Little Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Little Toe01 jnt/Left Little Toe02
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Little Toe01 jnt/Left Little Toe02
+          jnt/Left Little Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Little Toe01 jnt/Left Little Toe02
+          jnt/Left Little Toe03 jnt/Left Little Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Middle Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Middle Toe01 jnt/Left Middle Toe02
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Middle Toe01 jnt/Left Middle Toe02
+          jnt/Left Middle Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Middle Toe01 jnt/Left Middle Toe02
+          jnt/Left Middle Toe03 jnt/Left Middle Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Toe01 jnt/Left Toe02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Toe01 jnt/Left Toe02 jnt/Left Toe03
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Left Leg01 jnt/Left Leg02
+          jnt/Left Leg03 jnt/Left Foot jnt/Left Toe01 jnt/Left Toe02 jnt/Left Toe03
+          jnt/Left Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Big Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Big Toe01 jnt/Right Big Toe02
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Big Toe01 jnt/Right Big Toe02
+          jnt/Right Big Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Big Toe01 jnt/Right Big Toe02
+          jnt/Right Big Toe03 jnt/Right Big Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Little Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Little Toe01 jnt/Right Little
+          Toe02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Little Toe01 jnt/Right Little
+          Toe02 jnt/Right Little Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Little Toe01 jnt/Right Little
+          Toe02 jnt/Right Little Toe03 jnt/Right Little Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Middle Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Middle Toe01 jnt/Right Middle
+          Toe02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Middle Toe01 jnt/Right Middle
+          Toe02 jnt/Right Middle Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Middle Toe01 jnt/Right Middle
+          Toe02 jnt/Right Middle Toe03 jnt/Right Middle Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Toe01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Toe01 jnt/Right Toe02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Toe01 jnt/Right Toe02 jnt/Right
+          Toe03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Right Leg01 jnt/Right Leg02
+          jnt/Right Leg03 jnt/Right Foot jnt/Right Toe01 jnt/Right Toe02 jnt/Right
+          Toe03 jnt/Right Toe Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Head Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Left Eye01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Left Eye01 jnt/Left Eye Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Low Jaw01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Low Jaw01 jnt/Low Jaw Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Right Eye01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Right Eye01 jnt/Right Eye Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Upper Jaw01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Head jnt/Upper Jaw01 jnt/Upper Jaw Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Index01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Index01 jnt/Left Index02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Index01 jnt/Left Index02 jnt/Left Index03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Index01 jnt/Left Index02 jnt/Left Index03 jnt/Left Index04 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Index01 jnt/Left Index02 jnt/Left Index03 jnt/Left Index04 jnt/Left Index
+          Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Middle01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Middle01 jnt/Left Middle02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Middle01 jnt/Left Middle02 jnt/Left Middle03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Middle01 jnt/Left Middle02 jnt/Left Middle03 jnt/Left Middle04 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Middle01 jnt/Left Middle02 jnt/Left Middle03 jnt/Left Middle04 jnt/Left
+          Middle Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Pinky01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Pinky01 jnt/Left Pinky02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Pinky01 jnt/Left Pinky02 jnt/Left Pinky03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Pinky01 jnt/Left Pinky02 jnt/Left Pinky03 jnt/Left Pinky04 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Pinky01 jnt/Left Pinky02 jnt/Left Pinky03 jnt/Left Pinky04 jnt/Left Pinky
+          Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Ring01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Ring01 jnt/Left Ring02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Ring01 jnt/Left Ring02 jnt/Left Ring03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Ring01 jnt/Left Ring02 jnt/Left Ring03 jnt/Left Ring04 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Ring01 jnt/Left Ring02 jnt/Left Ring03 jnt/Left Ring04 jnt/Left Ring Tip
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Thumb01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Thumb01 jnt/Left Thumb02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Left Arm01 jnt/Left Arm02 jnt/Left Hand01 jnt/Left
+          Thumb01 jnt/Left Thumb02 jnt/Left Thumb Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Index01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Index01 jnt/Right Index02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Index01 jnt/Right Index02 jnt/Right Index03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Index01 jnt/Right Index02 jnt/Right Index03 jnt/Right Index04
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Index01 jnt/Right Index02 jnt/Right Index03 jnt/Right Index04
+          jnt/Right Index Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Middle01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Middle01 jnt/Right Middle02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Middle01 jnt/Right Middle02 jnt/Right Middle03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Middle01 jnt/Right Middle02 jnt/Right Middle03 jnt/Right Middle04
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Middle01 jnt/Right Middle02 jnt/Right Middle03 jnt/Right Middle04
+          jnt/Right Middle Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Pinky01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Pinky01 jnt/Right Pinky02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Pinky01 jnt/Right Pinky02 jnt/Right Pinky03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Pinky01 jnt/Right Pinky02 jnt/Right Pinky03 jnt/Right Pinky04
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Pinky01 jnt/Right Pinky02 jnt/Right Pinky03 jnt/Right Pinky04
+          jnt/Right Pinky Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Ring01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Ring01 jnt/Right Ring02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Ring01 jnt/Right Ring02 jnt/Right Ring03 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Ring01 jnt/Right Ring02 jnt/Right Ring03 jnt/Right Ring04 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Ring01 jnt/Right Ring02 jnt/Right Ring03 jnt/Right Ring04 jnt/Right
+          Ring Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Thumb01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Thumb01 jnt/Right Thumb02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Spine02 jnt/Spine03 jnt/Spine04
+          jnt/Spine05 jnt/Spine06 jnt/Right Arm01 jnt/Right Arm02 jnt/Right Hand01
+          jnt/Right Thumb01 jnt/Right Thumb02 jnt/Right Thumb Tip jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt/Tail19 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt/Tail19 jnt/Tail20 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt/Tail19 jnt/Tail20 jnt/Tail21 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt/Tail19 jnt/Tail20 jnt/Tail21 jnt/Tail22 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt/Tail19 jnt/Tail20 jnt/Tail21 jnt/Tail22 jnt/Tail23 jnt
+        weight: 1
+      - path: Ctrl_General/Root Point Helper/Spine01 jnt/Tail01 jnt/Tail02 jnt/Tail03
+          jnt/Tail04 jnt/Tail05 jnt/Tail06 jnt/Tail07 jnt/Tail08 jnt/Tail09 jnt/Tail10
+          jnt/Tail11 jnt/Tail12 jnt/Tail13 jnt/Tail14 jnt/Tail15 jnt/Tail16 jnt/Tail17
+          jnt/Tail18 jnt/Tail19 jnt/Tail20 jnt/Tail21 jnt/Tail22 jnt/Tail23 jnt/Tail
+          Tip jnt
+        weight: 1
+      - path: Monkey
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 27
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: Ctrl_General
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
