@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyChase : MonoBehaviour, IEnemyBehavior
+public class EnemyChase : EnemyBehaviorBase
 {
     public EnemyMotor motor;
     public Transform player;
@@ -31,22 +31,7 @@ public class EnemyChase : MonoBehaviour, IEnemyBehavior
         }
     }
 
-    private bool _isComplete;
-    public bool IsComplete => _isComplete;
-
-    public void Enter()
-    {
-        _isComplete = false;
-        motor.MoveTo(player.position);
-    }
-
-    public void Exit()
-    {
-        _isComplete = true;
-        motor.Stop();
-    }
-
-    public void Tick()
+    public override void Tick()
     {
         _timer -= Time.deltaTime;
 
@@ -67,7 +52,24 @@ public class EnemyChase : MonoBehaviour, IEnemyBehavior
 
         if (Vector3.Distance(transform.position, player.position) < 5f)
         {
-            _isComplete = true;
+            isComplete = true;
         }
+    }
+
+	public override bool CanRun()
+	{
+        return true;
+	}
+
+	public override void Enter()
+    {
+        isComplete = false;
+        motor.MoveTo(player.position);
+    }
+
+	public override void Exit()
+    {
+        isComplete = true;
+        motor.Stop();
     }
 }

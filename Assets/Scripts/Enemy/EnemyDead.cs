@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyIdle : EnemyBehaviorBase
+public class EnemyDead : EnemyBehaviorBase
 {
 	public override bool CanRun()
 	{

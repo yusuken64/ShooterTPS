@@ -1,8 +1,11 @@
 ﻿public interface IEnemyBehavior
 {
-    bool IsComplete { get; }
+    bool CanRun();
+    int Priority { get; }
 
     void Enter();
     void Tick();
     void Exit();
+
+    bool IsComplete { get; }
 }

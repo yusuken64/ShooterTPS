@@ -7,8 +7,9 @@ public class EnemyBrain : MonoBehaviour
     public EnemyAttack EnemyAttack;
     public EnemyChase EnemyChase;
     public EnemyIdle EnemyIdle;
+    public EnemyDead EnemyDead;
 
-    private IEnemyBehavior _current;
+    private EnemyBehaviorBase _current;
 
     void Update()
     {
@@ -26,14 +27,14 @@ public class EnemyBrain : MonoBehaviour
         }
     }
 
-    void SetBehavior(IEnemyBehavior next)
+    void SetBehavior(EnemyBehaviorBase next)
     {
         _current?.Exit();
         _current = next;
         _current.Enter();
     }
 
-    IEnemyBehavior PickNextBehavior()
+    EnemyBehaviorBase PickNextBehavior()
     {
         float dist = Vector3.Distance(transform.position, player.position);
 
@@ -43,5 +44,31 @@ public class EnemyBrain : MonoBehaviour
         }
 
         return EnemyChase;
+    }
+
+    public void OnDeath()
+    {
+        SetBehavior(EnemyDead);
+    }
+}
+
+public class Enemy : MonoBehaviour
+{
+    public EnemyBrain EnemyBrain;
+
+    public int HP;
+
+    public void TakeDamage(int damage)
+	{
+        HP -= damage;
+        if (HP <= 0)
+		{
+            Die();
+		}
+	}
+
+	private void Die()
+    {
+        EnemyBrain.OnDeath();
     }
 }

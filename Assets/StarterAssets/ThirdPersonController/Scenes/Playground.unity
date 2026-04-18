@@ -194,9 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673d697cc55ea484b899818b375e1353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  SelectionPriority: 0
   EnemyAnimationController: {fileID: 73679688}
-  cooldown: 1.2
-  player: {fileID: 0}
+  AttackCooldownMax: 0
+  AttackCooldown: 0
 --- !u!114 &73679690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +213,34 @@ MonoBehaviour:
   player: {fileID: 385704968}
   EnemyAttack: {fileID: 73679689}
   EnemyChase: {fileID: 73679687}
-  EnemyIdle: {fileID: 0}
+  EnemyIdle: {fileID: 73679695}
+  EnemyDead: {fileID: 73679694}
+--- !u!114 &73679694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73679683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d66e9efea3d69842afae51cde137007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDead
+  SelectionPriority: 0
+--- !u!114 &73679695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73679683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1909dffc981144092b905fc954a2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyIdle
+  SelectionPriority: 0
 --- !u!4 &169827644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5846266191338478390, guid: 9d4dd85afa58a17438e34b09e8d15f77, type: 3}
@@ -3387,6 +3415,12 @@ PrefabInstance:
       addedObject: {fileID: 73679689}
     - targetCorrespondingSourceObject: {fileID: 6800040750187637900, guid: ea8c5222a1ec26344bf7cda886157ec9, type: 3}
       insertIndex: 5
+      addedObject: {fileID: 73679695}
+    - targetCorrespondingSourceObject: {fileID: 6800040750187637900, guid: ea8c5222a1ec26344bf7cda886157ec9, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 73679694}
+    - targetCorrespondingSourceObject: {fileID: 6800040750187637900, guid: ea8c5222a1ec26344bf7cda886157ec9, type: 3}
+      insertIndex: 7
       addedObject: {fileID: 73679688}
   m_SourcePrefab: {fileID: 100100000, guid: ea8c5222a1ec26344bf7cda886157ec9, type: 3}
 --- !u!1001 &8345070700268369567

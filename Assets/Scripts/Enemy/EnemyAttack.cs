@@ -1,18 +1,15 @@
 using System;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour, IEnemyBehavior
+
+public class EnemyAttack : EnemyBehaviorBase
 {
     public EnemyAnimationController EnemyAnimationController;
-    public float cooldown = 3.2f;
+    public float AttackCooldownMax;
+    public float AttackCooldown;
+    private Transform player;
 
-    private float _timer;
-    public Transform player;
-
-    private bool _isComplete;
-    public bool IsComplete => _isComplete;
-
-    void Start()
+	void Start()
     {
         if (player == null)
         {
@@ -22,24 +19,11 @@ public class EnemyAttack : MonoBehaviour, IEnemyBehavior
         }
     }
 
-    public void Enter()
+    public  override void Enter()
     {
-        _isComplete = false;
-        _timer = cooldown;
+        isComplete = false;
+        AttackCooldown = AttackCooldownMax;
         TryAttack(player);
-    }
-
-	public void Exit()
-	{
-	}
-
-	public void Tick()
-    {
-        _timer -= Time.deltaTime;
-        if (_timer <= 0)
-		{
-            _isComplete = true;
-		}
     }
 
 	public void TryAttack(Transform target)
@@ -50,4 +34,19 @@ public class EnemyAttack : MonoBehaviour, IEnemyBehavior
         // trigger animation
         EnemyAnimationController.Play(EnemyAnimationController.attackAnim);
     }
+
+	internal override void Update()
+	{
+		base.Update();
+        AttackCooldown -= Time.deltaTime;
+	}
+
+	public override bool CanRun()
+	{
+        return AttackCooldown <= 0;
+	}
+
+	public override void Exit()
+	{
+	}
 }
