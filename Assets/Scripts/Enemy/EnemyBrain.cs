@@ -29,6 +29,8 @@ public class EnemyBrain : MonoBehaviour
 
     void SetBehavior(EnemyBehaviorBase next)
     {
+        if (EnemyDead.Died) { return; }
+
         _current?.Exit();
         _current = next;
         _current.Enter();
@@ -48,27 +50,9 @@ public class EnemyBrain : MonoBehaviour
 
     public void OnDeath()
     {
-        SetBehavior(EnemyDead);
-    }
-}
-
-public class Enemy : MonoBehaviour
-{
-    public EnemyBrain EnemyBrain;
-
-    public int HP;
-
-    public void TakeDamage(int damage)
-	{
-        HP -= damage;
-        if (HP <= 0)
-		{
-            Die();
-		}
-	}
-
-	private void Die()
-    {
-        EnemyBrain.OnDeath();
+        if (EnemyDead.CanRun())
+        {
+            SetBehavior(EnemyDead);
+        }
     }
 }

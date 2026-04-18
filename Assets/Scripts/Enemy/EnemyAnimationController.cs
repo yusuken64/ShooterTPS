@@ -8,6 +8,7 @@ public class EnemyAnimationController : MonoBehaviour
     public string idleAnim = "idle";
     public string chaseAnim = "run";
     public string attackAnim = "roll";
+    public string deadAnim = "die";
 
     private string _currentAnim;
 

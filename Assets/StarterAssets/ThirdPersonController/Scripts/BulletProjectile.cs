@@ -18,8 +18,12 @@ public class BulletProjectile : MonoBehaviour
         bulletRigidBody.linearVelocity = transform.forward * speed;
     }
 
-	private void OnTriggerEnter(Collider other)
-	{
+    private void OnTriggerEnter(Collider other)
+    {
         Destroy(gameObject);
-	}
+        if (other.transform.parent.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            enemy.TakeDamage(1);
+        }
+    }
 }
