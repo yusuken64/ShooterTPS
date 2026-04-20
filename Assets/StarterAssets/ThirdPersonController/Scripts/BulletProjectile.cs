@@ -21,9 +21,12 @@ public class BulletProjectile : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        if (other.transform.parent.TryGetComponent<Enemy>(out Enemy enemy))
+        if (other.transform.parent != null)
         {
-            enemy.TakeDamage(1);
+            if (other.transform.parent.TryGetComponent<Enemy>(out Enemy enemy))
+            {
+                enemy.TakeDamage(1);
+            }
         }
     }
 }
