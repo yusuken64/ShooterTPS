@@ -13,7 +13,7 @@ public class AttackHitBox : MonoBehaviour
             hasHit = true;
             // deal damage
 
-            FindFirstObjectByType<UI>().PlayerHealth -= 10;
+            //FindFirstObjectByType<UI>().PlayerHealth -= 10;
         }
     }
 }

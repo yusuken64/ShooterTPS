@@ -5,6 +5,9 @@ public class BulletProjectile : MonoBehaviour
     public float MaxLifeTime = 4f;
     private Rigidbody bulletRigidBody;
 
+    public GameObject HitParticles;
+    public GameObject MissParticles;
+
     void Start()
     {
         bulletRigidBody = GetComponent<Rigidbody>();
@@ -21,12 +24,17 @@ public class BulletProjectile : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        if (other.transform.parent != null)
+		if (other.transform.parent != null &&
+            other.transform.parent.TryGetComponent<Enemy>(out Enemy enemy))
+		{
+			enemy.TakeDamage(1);
+			var particle = Instantiate(HitParticles, other.transform.position, Quaternion.identity);
+            Destroy(particle, 1f);
+		}
+		else
         {
-            if (other.transform.parent.TryGetComponent<Enemy>(out Enemy enemy))
-            {
-                enemy.TakeDamage(1);
-            }
+            var particle = Instantiate(MissParticles, transform.position, Quaternion.identity);
+            Destroy(particle, 1f);
         }
-    }
+	}
 }
