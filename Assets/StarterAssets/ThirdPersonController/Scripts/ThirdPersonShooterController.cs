@@ -1,5 +1,6 @@
 using Cinemachine;
 using StarterAssets;
+using System;
 using UnityEngine;
 
 public class ThirdPersonShooterController : MonoBehaviour
@@ -15,10 +16,17 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 	public Transform DebugTransform;
 
-	public BulletProjectile BulletProjectilePrefab;
-	public Transform BulletSpawnPoint;
-
 	public Animator Animator;
+
+	public Gun CurrentGun;
+	private bool aiming;
+
+	private void Awake()
+	{
+		//TODO do this register on switch weapons;
+		CurrentGun.OnReloadStart += CurrentGun_OnReloadStart;
+		CurrentGun.OnReloadEnd += CurrentGun_OnReloadEnd;
+	}
 
 	private void Update()
 	{
@@ -40,19 +48,28 @@ public class ThirdPersonShooterController : MonoBehaviour
 			}
 
 			HandleShoot();
+
+			if (!aiming)
+			{
+				CurrentGun?.Cock();
+				aiming = true;
+			}
 		}
 		else
 		{
+			aiming = false;
 			AimVirtualCamera.gameObject.SetActive(false);
 			ThirdPersonController.SetSensitivity(NormalSensitivity);
 			ThirdPersonController.SetRotateOnMove(true);
 			Animator.SetLayerWeight(1, Mathf.Lerp(Animator.GetLayerWeight(1), 0, Time.deltaTime * 10f));
+
+			HandleReload();
 		}
 	}
 
 	private void HandleShoot()
 	{
-		if (StarterAssetsInputs.shoot)
+		if (StarterAssetsInputs.shoot && CurrentGun != null)
 		{
 			Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
 			Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
@@ -68,16 +85,25 @@ public class ThirdPersonShooterController : MonoBehaviour
 				// fallback if nothing hit
 				targetPoint = ray.GetPoint(100f);
 			}
-
-			Vector3 shootDir = (targetPoint - BulletSpawnPoint.position).normalized;
-
-			Instantiate(
-				BulletProjectilePrefab,
-				BulletSpawnPoint.position,
-				Quaternion.LookRotation(shootDir, Vector3.up)
-			);
-
-			StarterAssetsInputs.shoot = false;
+			CurrentGun.TryShoot(targetPoint);
 		}
+	}
+
+	private void HandleReload()
+	{
+		if (StarterAssetsInputs.reload && CurrentGun != null)
+		{
+			CurrentGun.Reload();
+		}
+	}
+
+	private void CurrentGun_OnReloadStart()
+	{
+		Animator.Play("Reload");
+	}
+
+	private void CurrentGun_OnReloadEnd()
+	{
+		Animator.Play("Idle Walk Run Blend");
 	}
 }
