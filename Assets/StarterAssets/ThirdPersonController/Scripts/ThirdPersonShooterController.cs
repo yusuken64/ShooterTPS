@@ -18,6 +18,8 @@ public class ThirdPersonShooterController : MonoBehaviour
 	public BulletProjectile BulletProjectilePrefab;
 	public Transform BulletSpawnPoint;
 
+	public Animator Animator;
+
 	private void Update()
 	{
 		if (StarterAssetsInputs.aim)
@@ -25,25 +27,27 @@ public class ThirdPersonShooterController : MonoBehaviour
 			AimVirtualCamera.gameObject.SetActive(true);
 			ThirdPersonController.SetSensitivity(AimSensitivity);
 			ThirdPersonController.SetRotateOnMove(false);
+			Animator.SetLayerWeight(1, Mathf.Lerp(Animator.GetLayerWeight(1), 1, Time.deltaTime * 10f));
+
+			Vector3 aimDir = Camera.main.transform.forward;
+
+			if (aimDir.sqrMagnitude > 0.001f)
+			{
+				aimDir.Normalize();
+
+				Quaternion targetRotation = Quaternion.LookRotation(aimDir);
+				transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 15f);
+			}
+
+			HandleShoot();
 		}
 		else
 		{
 			AimVirtualCamera.gameObject.SetActive(false);
 			ThirdPersonController.SetSensitivity(NormalSensitivity);
 			ThirdPersonController.SetRotateOnMove(true);
+			Animator.SetLayerWeight(1, Mathf.Lerp(Animator.GetLayerWeight(1), 0, Time.deltaTime * 10f));
 		}
-
-		Vector3 aimDir = Camera.main.transform.forward;
-
-		if (aimDir.sqrMagnitude > 0.001f)
-		{
-			aimDir.Normalize();
-
-			Quaternion targetRotation = Quaternion.LookRotation(aimDir);
-			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 15f);
-		}
-
-		HandleShoot();
 	}
 
 	private void HandleShoot()
