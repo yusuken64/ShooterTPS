@@ -43,6 +43,21 @@ public abstract class Gun : MonoBehaviour
         AmmoInClip -= amount;
     }
 
+    internal bool CanReload()
+    {
+        if (!UsesAmmo || isReloading)
+        {
+            return false;
+        }
+
+        if (AmmoInClip >= ClipSize)
+		{
+            return false;
+		}
+
+        return true;
+    }
+
     public virtual void Reload()
     {
         if (!UsesAmmo || isReloading)
@@ -76,5 +91,7 @@ public abstract class Gun : MonoBehaviour
         OnReloadEnd?.Invoke();
     }
 
-    public virtual void Cock() {}
+    public virtual void OnTriggerReleased() { }
+
+	public virtual void Cock() {}
 }

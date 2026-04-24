@@ -14,6 +14,7 @@ namespace StarterAssets
 		public bool sprint;
 		public bool aim;
 		public bool shoot;
+		public bool releaseThisFrame;
 		public bool reload;
 		public bool roll;
 
@@ -55,6 +56,16 @@ namespace StarterAssets
 
 		public void OnShoot(InputValue value)
 		{
+			if (!value.isPressed && shoot)
+			{
+				shoot = false;
+				ShootReleaseInput(true);
+			}
+			else
+			{
+				ShootReleaseInput(false);
+			}
+
 			ShootInput(value.isPressed);
 		}
 
@@ -99,7 +110,13 @@ namespace StarterAssets
 		{
 			shoot = newShootState;
 		}
-		
+
+		public void ShootReleaseInput(bool newShotReleaseState)
+		{
+			releaseThisFrame = newShotReleaseState;
+		}
+
+
 		public void ReloadInput(bool newReloadState)
 		{
 			reload = newReloadState;

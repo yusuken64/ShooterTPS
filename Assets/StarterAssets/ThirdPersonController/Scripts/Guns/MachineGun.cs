@@ -18,6 +18,7 @@ public class MachineGun : Gun
 
     public ParticleSystem MuzzleFlash;
 
+    private bool firing = false;
     public override void TryShoot(Vector3 targetPoint)
     {
         // Gate firing by time
@@ -27,7 +28,11 @@ public class MachineGun : Gun
         if (!CanShoot())
         {
             nextFireTime = Time.time + ReloadTime;
-            AudioManager.Instance.PlaySound(DryFire);
+            if (firing)
+            {
+                AudioManager.Instance.PlaySound(DryFire);
+                firing = false;
+            }
             return;
         }
 
@@ -46,15 +51,25 @@ public class MachineGun : Gun
         MuzzleFlash.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         MuzzleFlash.Play();
 
+        firing = true;
         AudioManager.Instance.PlaySound(Shoot);
         ConsumeAmmo();
     }
 
-	public override void Reload()
+	public override void OnTriggerReleased()
 	{
+		base.OnTriggerReleased();
+        firing = false;
+	}
+
+	public override void Reload()
+    {
         if (isReloading) { return; }
-        AudioManager.Instance.PlaySound(ReloadStart);
-		base.Reload();
+        if (CanReload())
+        {
+            AudioManager.Instance.PlaySound(ReloadStart);
+            base.Reload();
+        }
     }
 
 	public override void ReloadFinished()

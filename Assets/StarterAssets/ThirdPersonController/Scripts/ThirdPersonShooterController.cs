@@ -18,14 +18,16 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 	public Animator Animator;
 
-	public Gun CurrentGun;
+	public Player Player;
 	private bool aiming;
+
+	public bool Reloading;
 
 	private void Awake()
 	{
 		//TODO do this register on switch weapons;
-		CurrentGun.OnReloadStart += CurrentGun_OnReloadStart;
-		CurrentGun.OnReloadEnd += CurrentGun_OnReloadEnd;
+		Player.CurrentGun.OnReloadStart += CurrentGun_OnReloadStart;
+		Player.CurrentGun.OnReloadEnd += CurrentGun_OnReloadEnd;
 	}
 
 	private void Update()
@@ -51,7 +53,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 			if (!aiming)
 			{
-				CurrentGun?.Cock();
+				Player.CurrentGun?.Cock();
 				aiming = true;
 			}
 		}
@@ -69,7 +71,12 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 	private void HandleShoot()
 	{
-		if (StarterAssetsInputs.shoot && CurrentGun != null)
+		if (StarterAssetsInputs.releaseThisFrame && Player.CurrentGun != null)
+		{
+			Player.CurrentGun?.OnTriggerReleased();
+
+		}
+		if (StarterAssetsInputs.shoot && Player.CurrentGun != null)
 		{
 			Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
 			Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
@@ -85,26 +92,31 @@ public class ThirdPersonShooterController : MonoBehaviour
 				// fallback if nothing hit
 				targetPoint = ray.GetPoint(100f);
 			}
-			CurrentGun.TryShoot(targetPoint);
+			Player.CurrentGun.TryShoot(targetPoint);
 		}
 	}
 
 	private void HandleReload()
 	{
-		if (StarterAssetsInputs.reload && CurrentGun != null)
+		if (StarterAssetsInputs.reload &&
+			Player.CurrentGun != null &&
+			Player.CurrentGun.CanReload() &&
+			!Reloading)
 		{
-			CurrentGun.Reload();
+			Player.CurrentGun.Reload();
 		}
 	}
 
 	private void CurrentGun_OnReloadStart()
 	{
+		Reloading = true;
 		Animator.CrossFade("Reload", 0.05f);
 		//Animator.Play("Reload");
 	}
 
 	private void CurrentGun_OnReloadEnd()
 	{
+		Reloading = false;
 		Animator.CrossFade("Idle Walk Run Blend", 0.05f);
 		//Animator.Play("Idle Walk Run Blend");
 	}
