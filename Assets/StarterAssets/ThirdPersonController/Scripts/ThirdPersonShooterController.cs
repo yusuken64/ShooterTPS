@@ -99,11 +99,13 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 	private void CurrentGun_OnReloadStart()
 	{
-		Animator.Play("Reload");
+		Animator.CrossFade("Reload", 0.05f);
+		//Animator.Play("Reload");
 	}
 
 	private void CurrentGun_OnReloadEnd()
 	{
-		Animator.Play("Idle Walk Run Blend");
+		Animator.CrossFade("Idle Walk Run Blend", 0.05f);
+		//Animator.Play("Idle Walk Run Blend");
 	}
 }

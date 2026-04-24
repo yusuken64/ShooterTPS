@@ -103,6 +103,7 @@ namespace StarterAssets
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
+        private int _animIDRoll;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -128,6 +129,15 @@ namespace StarterAssets
             }
         }
 
+        //rolling
+        private bool _isRolling;
+        private Vector3 _rollDirection;
+
+        [SerializeField] private AnimationCurve _rollSpeedCurve = AnimationCurve.EaseInOut(0, 1, 1, 0);
+        public float RollSpeed = 5f;
+        public float RollCooldown = 1.0f;
+
+        private float _rollCooldownTimer;
 
         private void Awake()
         {
@@ -160,11 +170,103 @@ namespace StarterAssets
 
         private void Update()
         {
-            _hasAnimator = TryGetComponent(out _animator);
+            if (_rollCooldownTimer > 0f)
+            {
+                _rollCooldownTimer -= Time.deltaTime;
+            }
+            if (_isRolling)
+            {
+                HandleRoll();
+                return;
+            }
 
             JumpAndGravity();
             GroundedCheck();
             Move();
+            
+            if (_input.roll && !_isRolling && _rollCooldownTimer <= 0f)
+            {
+                StartRoll();
+            }
+        }
+
+        private void StartRoll()
+        {
+            _isRolling = true;
+            _rollCooldownTimer = RollCooldown;
+            _verticalVelocity = 0;
+
+            Vector3 camForward = _mainCamera.transform.forward;
+            Vector3 camRight = _mainCamera.transform.right;
+
+            camForward.y = 0f;
+            camRight.y = 0f;
+
+            camForward.Normalize();
+            camRight.Normalize();
+
+            Vector3 inputDir =
+                camForward * _input.move.y +
+                camRight * _input.move.x;
+
+            // fallback if no input
+            if (inputDir.sqrMagnitude < 0.01f)
+                inputDir = transform.forward;
+
+            _rollDirection = inputDir.normalized;
+
+            // snap rotation instantly to roll direction
+            transform.rotation = Quaternion.LookRotation(_rollDirection);
+
+            if (Grounded)
+            {
+                _animator?.SetTrigger("Roll");
+			}
+			else
+			{
+                _animator.Play(_animIDRoll);
+			}
+        }
+
+        private void HandleRoll()
+        {
+            AnimatorStateInfo state = _animator.GetCurrentAnimatorStateInfo(0);
+
+            // End roll when animation finishes
+            if (state.shortNameHash == _animIDRoll &&
+                state.normalizedTime >= 1f)
+            {
+                _isRolling = false;
+                _animator.CrossFade("Idle Walk Run Blend", 0.15f);
+                return;
+            }
+
+            // Use animation progress as master time source
+            float normalizedTime = state.normalizedTime;
+
+            // Movement shaping from curve (0 → 1)
+            float speedMultiplier = _rollSpeedCurve.Evaluate(normalizedTime);
+
+            // Horizontal speed (for gravity scaling)
+            Vector3 horizontalVelocity = _controller.velocity;
+            horizontalVelocity.y = 0f;
+
+            float horizontalSpeed = horizontalVelocity.magnitude;
+            float speed01 = Mathf.InverseLerp(0f, RollSpeed, horizontalSpeed);
+
+            // Inverse relationship: fast = less gravity, slow = more gravity
+            float gravityFactor = 1f - speed01;
+            float gravityScale = Mathf.Lerp(0.3f, 2.0f, gravityFactor);
+
+            var verticalVelocity = Gravity * gravityScale * Time.deltaTime;
+
+            // Apply roll movement
+            Vector3 motion =
+                _rollDirection *
+                (RollSpeed * speedMultiplier);
+
+            motion += Vector3.up * verticalVelocity;
+            _controller.Move(motion * Time.deltaTime);
         }
 
         private void LateUpdate()
@@ -179,6 +281,7 @@ namespace StarterAssets
             _animIDJump = Animator.StringToHash("Jump");
             _animIDFreeFall = Animator.StringToHash("FreeFall");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+            _animIDRoll = Animator.StringToHash("Running Dive Roll");
         }
 
         private void GroundedCheck()

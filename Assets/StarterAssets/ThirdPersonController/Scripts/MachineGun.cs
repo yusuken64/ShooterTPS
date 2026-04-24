@@ -16,6 +16,8 @@ public class MachineGun : Gun
     public AudioClip ReloadFinish;
     public AudioClip CockSound;
 
+    public ParticleSystem MuzzleFlash;
+
     public override void TryShoot(Vector3 targetPoint)
     {
         // Gate firing by time
@@ -40,6 +42,9 @@ public class MachineGun : Gun
             origin,
             Quaternion.LookRotation(shootDir, Vector3.up)
         );
+
+        MuzzleFlash.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        MuzzleFlash.Play();
 
         AudioManager.Instance.PlaySound(Shoot);
         ConsumeAmmo();
