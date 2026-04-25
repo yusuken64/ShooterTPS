@@ -1,37 +1,17 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyChase : EnemyBehaviorBase
 {
     public EnemyMotor motor;
-    public Transform player;
-    public EnemyAttack EnemyAttack;
 
     public float repathRate = 0.2f;
     public float rotationSpeed = 10f;
 
     private float _timer;
+    public Player target;
 
-	void Start()
-    {
-        if (player == null)
-        {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null)
-                player = p.transform;
-        }
-    }
-
-    void Update()
-    {
-        if (player == null || motor == null) return;
-
-        if (_timer <= 0f)
-        {
-            _timer = repathRate;
-        }
-    }
-
-    public override void Tick()
+	public override void Tick()
     {
         _timer -= Time.deltaTime;
 
@@ -50,21 +30,77 @@ public class EnemyChase : EnemyBehaviorBase
             );
         }
 
-        if (Vector3.Distance(transform.position, player.position) < 5f)
+        if (Vector3.Distance(transform.position, target.transform.position) < 5f)
         {
             isComplete = true;
         }
     }
 
-	public override bool CanRun()
-	{
-        return true;
-	}
+    public override bool CanRun()
+    {
+        if (!motor.agent.isActiveAndEnabled)
+            return false;
 
-	public override void Enter()
+        //NavMeshHit hit;
+        //if (!motor.agent.isOnNavMesh)
+        //{
+
+        //    if (NavMesh.SamplePosition(motor.agent.transform.position, out hit, 5f, NavMesh.AllAreas))
+        //    {
+        //        motor.agent.Warp(hit.position);
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
+
+        NavMeshHit hit;
+
+        Vector3 start = motor.agent.transform.position;
+        Vector3 end = target.transform.position;
+
+        Debug.DrawLine(start, end, Color.red, 1f);
+        //Debug.Log($"Start on NavMesh: {NavMesh.SamplePosition(start, out _, 2f, NavMesh.AllAreas)}");
+        //Debug.Log($"End on NavMesh: {NavMesh.SamplePosition(end, out _, 2f, NavMesh.AllAreas)}");
+
+        if (NavMesh.SamplePosition(start, out hit, 2f, NavMesh.AllAreas))
+            start = hit.position;
+        else
+            return false;
+
+        if (NavMesh.SamplePosition(end, out hit, 2f, NavMesh.AllAreas))
+            end = hit.position;
+        else
+            return false;
+
+        NavMeshPath path = new NavMeshPath();
+
+        bool hasPath = NavMesh.CalculatePath(
+            start,
+            end,
+            NavMesh.AllAreas,
+            path
+        );
+
+        if (!hasPath || path.status != NavMeshPathStatus.PathComplete)
+            return false;
+
+        return true;
+
+        if (!hasPath || path.status != NavMeshPathStatus.PathComplete)
+            return false;
+
+        return true;
+    }
+
+    public override void Enter()
     {
         isComplete = false;
-        motor.MoveTo(player.position);
+
+        target = FindFirstObjectByType<Player>();
+
+        motor.MoveTo(target.transform.position);
     }
 
 	public override void Exit()

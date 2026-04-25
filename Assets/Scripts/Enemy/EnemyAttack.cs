@@ -18,9 +18,7 @@ public class EnemyAttack : EnemyBehaviorBase
     {
         if (player == null)
         {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null)
-                player = p.transform;
+            player = FindFirstObjectByType<Player>().transform;
         }
     }
 
@@ -30,6 +28,7 @@ public class EnemyAttack : EnemyBehaviorBase
     {
         isComplete = false;
         AttackCooldown = AttackCooldownMax;
+        timer = AttackCooldownMax;
 
         if (attackRoutine != null)
             StopCoroutine(attackRoutine);
@@ -50,6 +49,7 @@ public class EnemyAttack : EnemyBehaviorBase
         AttackCooldown = AttackCooldownMax;
         yield return new WaitForSeconds(AttackCooldownMax);
 
+        attackRoutine = null;
         isComplete = true;
     }
 
@@ -61,6 +61,13 @@ public class EnemyAttack : EnemyBehaviorBase
 
     public override bool CanRun()
     {
+        float dist = Vector3.Distance(transform.position, player.position);
+
+        if (dist > 2.5f)
+        {
+            return false;
+        }
+
         return AttackCooldown <= 0 && attackRoutine == null; 
     }
 

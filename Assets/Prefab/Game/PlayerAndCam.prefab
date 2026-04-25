@@ -829,6 +829,9 @@ PrefabInstance:
       addedObject: {fileID: 3873501315362767173}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5131495029731022068, guid: 9d4dd85afa58a17438e34b09e8d15f77, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1229151044674443361}
+    - targetCorrespondingSourceObject: {fileID: 5131495029731022068, guid: 9d4dd85afa58a17438e34b09e8d15f77, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5891877995614969271}
     - targetCorrespondingSourceObject: {fileID: 5131495029731022068, guid: 9d4dd85afa58a17438e34b09e8d15f77, type: 3}
@@ -854,6 +857,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5131495029731022068, guid: 9d4dd85afa58a17438e34b09e8d15f77, type: 3}
   m_PrefabInstance: {fileID: 1051291909005807780}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1229151044674443361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305323792833463376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c088aa03cbdf341b1cf45ba4e7e6d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  Health: 100
+  CurrentGun: {fileID: 0}
 --- !u!143 &5891877995614969271
 CharacterController:
   m_ObjectHideFlags: 0
@@ -962,6 +979,7 @@ MonoBehaviour:
   sprint: 0
   aim: 0
   shoot: 0
+  releaseThisFrame: 0
   reload: 0
   roll: 0
   analogMovement: 0
@@ -1020,7 +1038,7 @@ MonoBehaviour:
     m_Bits: 1
   DebugTransform: {fileID: 0}
   Animator: {fileID: 5305323792842962464}
-  CurrentGun: {fileID: 0}
+  Player: {fileID: 0}
   Reloading: 0
 --- !u!95 &5305323792842962464 stripped
 Animator:

@@ -1,27 +1,28 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyBrain : MonoBehaviour
 {
-    public Transform player;
+    public Transform target;
 
     public EnemyAttack EnemyAttack;
     public EnemyChase EnemyChase;
     public EnemyIdle EnemyIdle;
     public EnemyDead EnemyDead;
 
-    private EnemyBehaviorBase _current;
+    public EnemyBehaviorBase Current;
 
     void Update()
     {
-        if (_current == null)
+        if (Current == null)
         {
             SetBehavior(PickNextBehavior());
             return;
         }
 
-        _current.Tick();
+        Current.Tick();
 
-        if (_current.IsComplete)
+        if (Current.IsComplete)
         {
             SetBehavior(PickNextBehavior());
         }
@@ -31,21 +32,24 @@ public class EnemyBrain : MonoBehaviour
     {
         if (EnemyDead.Died) { return; }
 
-        _current?.Exit();
-        _current = next;
-        _current.Enter();
+        Current?.Exit();
+        Current = next;
+        Current.Enter();
     }
 
     EnemyBehaviorBase PickNextBehavior()
     {
-        float dist = Vector3.Distance(transform.position, player.position);
-
-        if (dist < 2.5f)
+        if (EnemyAttack.CanRun())
         {
             return EnemyAttack;
         }
 
-        return EnemyChase;
+        if (EnemyChase.CanRun())
+        {
+            return EnemyChase;
+        }
+
+        return EnemyIdle;
     }
 
     public void OnDeath()

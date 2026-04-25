@@ -6,7 +6,13 @@ public class Enemy : MonoBehaviour
 
     public int HP;
 
-    public void TakeDamage(int damage)
+	private void Start()
+	{
+		EnemyBrain.target = FindFirstObjectByType<Player>().transform;
+		EnemyBrain.EnemyChase.target = FindFirstObjectByType<Player>();
+	}
+
+	public void TakeDamage(int damage)
 	{
         if (HP <= 0) { return; }
         HP -= damage;

@@ -8,12 +8,11 @@ public class AttackHitBox : MonoBehaviour
     {
         if (hasHit) return;
 
-        if (other.CompareTag("Player"))
+        if (other.TryGetComponent(out Player player))
         {
             hasHit = true;
             // deal damage
-
-            //FindFirstObjectByType<UI>().PlayerHealth -= 10;
+            player.Health -= 10;
         }
     }
 }
