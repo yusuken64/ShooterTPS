@@ -12,7 +12,7 @@ public class AttackHitBox : MonoBehaviour
         {
             hasHit = true;
             // deal damage
-            player.TakeDamage(10);
+            player.TakeDamage(10, this.transform.position);
         }
     }
 }
