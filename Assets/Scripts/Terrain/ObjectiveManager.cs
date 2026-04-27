@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class ObjectiveManager : MonoBehaviour
 {
+    public TerrainGenerator TerrainGenerator;
+    public ObjectiveInteractable ObjectivePrefab;
+    public GameObject HelicopterPrefab;
+
     public List<ObjectiveInteractable> requiredInteractables;
 
     private HashSet<IInteractable> completed = new();
@@ -25,7 +29,17 @@ public class ObjectiveManager : MonoBehaviour
         ui.ObjectiveText.text = ObjectivesAsText();
     }
 
-    private string ObjectivesAsText()
+	internal void SpawnObjective()
+	{
+        var newItem =TerrainGenerator.SpawnObjective(ObjectivePrefab.gameObject);
+		List<ObjectiveInteractable> objectives = new()
+        {
+            newItem.GetComponent<ObjectiveInteractable>()
+        };
+		SetObjectives(objectives);
+    }
+
+	private string ObjectivesAsText()
     {
         string text = "";
         text +=  $"Progress: { completed.Count}/{ requiredInteractables.Count}";
@@ -33,7 +47,7 @@ public class ObjectiveManager : MonoBehaviour
         if (completed.Count == requiredInteractables.Count)
         {
             text += Environment.NewLine;
-            text += "Objective Complete!";
+            text += "Objective Complete! Get to the CHOPPA!";
         }
 
         return text;
@@ -42,8 +56,26 @@ public class ObjectiveManager : MonoBehaviour
 	internal void SetObjectives(List<ObjectiveInteractable> objectives)
 	{
         requiredInteractables = objectives;
+        foreach(var interactable in requiredInteractables)
+		{
+			interactable.OnComplete += Interactable_OnComplete;
+		}
         UpdateUI();
     }
+
+	private void Interactable_OnComplete()
+    {
+        if (completed.Count == requiredInteractables.Count)
+        {
+            var newItem = TerrainGenerator.SpawnObjective(HelicopterPrefab.gameObject);
+            var interactable = newItem.GetComponentInChildren<ObjectiveInteractable>();
+			interactable.OnComplete += HeliInteractable_OnComplete;
+        }
+    }
+
+	private void HeliInteractable_OnComplete()
+	{
+	}
 
 	public void RegisterInteraction(IInteractable interactable)
     {

@@ -27,8 +27,8 @@ public class PlayerInteraction : MonoBehaviour
         if (_input.interact &&
             currentInteractable != null)
         {
-            currentInteractable.Interact();
             objectiveManager.RegisterInteraction(currentInteractable);
+            currentInteractable.Interact();
         }
 
         if (currentInteractable != null)
@@ -60,6 +60,12 @@ public class PlayerInteraction : MonoBehaviour
                 bestScore = dot;
                 best = interactable;
             }
+        }
+
+        if (best != currentInteractable)
+        {
+            currentInteractable?.OnFocusLost();
+            best?.OnFocusGained();
         }
 
         currentInteractable = best;

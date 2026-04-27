@@ -21,8 +21,7 @@ public class StageManager : MonoBehaviour
             TerrainGenerator.CreateTerrain();
         }
 
-        var objectives = FindObjectsByType<ObjectiveInteractable>(FindObjectsSortMode.None).ToList();
-        ObjectiveManager.SetObjectives(objectives);
+        ObjectiveManager.SpawnObjective();
 
         if (SpawnEnemiesOnStart)
         {

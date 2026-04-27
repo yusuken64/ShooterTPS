@@ -5,7 +5,7 @@ using UnityEngine;
 public class TerrainGenerator : MonoBehaviour
 {
     public List<GameObject> TerrainChunk;
-    public GameObject InteractablePrefab;
+    public GameObject EmptyPlanePrefab;
 
     public int Rows;
     public int Columns;
@@ -14,6 +14,7 @@ public class TerrainGenerator : MonoBehaviour
 
     public Transform Container;
     public NavMeshSurface Surface;
+    private List<Vector2Int> reservedSpots = new();
 
     [ContextMenu("Create Terrain")]
     public void CreateTerrain()
@@ -30,7 +31,7 @@ public class TerrainGenerator : MonoBehaviour
 		}
 	}
 
-	private void GenerateTerrain()
+    private void GenerateTerrain()
     {
         if (TerrainChunk == null || TerrainChunk.Count == 0)
         {
@@ -38,39 +39,84 @@ public class TerrainGenerator : MonoBehaviour
             return;
         }
 
-        float totalWidth = Columns * ChunkSize;
-        float totalHeight = Rows * ChunkSize;
+        reservedSpots = new List<Vector2Int>
+        {
+            new(0, 0),
+            new(Columns - 1, 0),
+            new(0, Rows - 1),
+            new(Columns - 1, Rows - 1),
+            new(Columns / 2, Rows / 2),
+        };
 
         for (int x = 0; x < Columns; x++)
         {
             for (int y = 0; y < Rows; y++)
-            {
-                // pick a random chunk prefab
-                GameObject prefab = TerrainChunk[Random.Range(0, TerrainChunk.Count)];
+			{
+				Vector2Int coord = new(x, y);
 
-                if( x == Columns/2 &&
-                    y == Rows/2)
+				GameObject prefab;
+
+				if (reservedSpots.Contains(coord))
 				{
-                    prefab = InteractablePrefab;
+					prefab = EmptyPlanePrefab;
+				}
+				else
+				{
+					prefab = TerrainChunk[Random.Range(0, TerrainChunk.Count)];
 				}
 
-                Vector3 position = new Vector3(
-                    x * ChunkSize - totalWidth / 2f + ChunkSize / 2f,
-                    0f,
-                    y * ChunkSize - totalHeight / 2f + ChunkSize / 2f
-                );
+				SpawnPrefab(x, y, prefab);
+			}
+		}
 
-                int rotationIndex = Random.Range(0, 4); // 0,1,2,3
-                Quaternion rotation = Quaternion.Euler(0f, rotationIndex * 90f, 0f);
-                GameObject chunk = Instantiate(prefab, position, rotation, Container);
+        Surface?.BuildNavMesh();
+    }
 
-                chunk.name = $"Chunk_{x}_{y}";
-            }
-        }
+	private void SpawnPrefab(int x, int y, GameObject prefab)
+	{
+		float totalWidth = Columns * ChunkSize;
+		float totalHeight = Rows * ChunkSize;
 
-        if (Surface != null)
+		Vector3 position = new Vector3(
+			x * ChunkSize - totalWidth / 2f + ChunkSize / 2f,
+			0f,
+			y * ChunkSize - totalHeight / 2f + ChunkSize / 2f
+		);
+
+		int rotationIndex = Random.Range(0, 4);
+		Quaternion rotation = Quaternion.Euler(0f, rotationIndex * 90f, 0f);
+
+		GameObject chunk = Instantiate(prefab, position, rotation, Container);
+		chunk.name = $"Chunk_{x}_{y}";
+	}
+
+    public GameObject SpawnObjective(GameObject objectivePrefab)
+    {
+        if (reservedSpots == null || reservedSpots.Count == 0)
         {
-            Surface.BuildNavMesh();
+            Debug.LogWarning("No reserved spots left!");
+            return null;
         }
+
+        int index = Random.Range(0, reservedSpots.Count);
+        Vector2Int chosenSpot = reservedSpots[index];
+
+        reservedSpots.RemoveAt(index); // consume it
+
+        Vector3 position = GridToWorld(chosenSpot);
+
+        return Instantiate(objectivePrefab, position, Quaternion.identity);
+    }
+
+    private Vector3 GridToWorld(Vector2Int coord)
+    {
+        float totalWidth = Columns * ChunkSize;
+        float totalHeight = Rows * ChunkSize;
+
+        return new Vector3(
+            coord.x * ChunkSize - totalWidth / 2f + ChunkSize / 2f,
+            0f,
+            coord.y * ChunkSize - totalHeight / 2f + ChunkSize / 2f
+        );
     }
 }
