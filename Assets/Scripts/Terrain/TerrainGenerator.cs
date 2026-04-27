@@ -5,6 +5,7 @@ using UnityEngine;
 public class TerrainGenerator : MonoBehaviour
 {
     public List<GameObject> TerrainChunk;
+    public GameObject InteractablePrefab;
 
     public int Rows;
     public int Columns;
@@ -25,7 +26,7 @@ public class TerrainGenerator : MonoBehaviour
 	{
         foreach(Transform child in Container)
 		{
-            Destroy(child.gameObject);
+            DestroyImmediate(child.gameObject);
 		}
 	}
 
@@ -46,6 +47,12 @@ public class TerrainGenerator : MonoBehaviour
             {
                 // pick a random chunk prefab
                 GameObject prefab = TerrainChunk[Random.Range(0, TerrainChunk.Count)];
+
+                if( x == Columns/2 &&
+                    y == Rows/2)
+				{
+                    prefab = InteractablePrefab;
+				}
 
                 Vector3 position = new Vector3(
                     x * ChunkSize - totalWidth / 2f + ChunkSize / 2f,

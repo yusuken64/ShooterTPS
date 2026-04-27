@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class StageManager : MonoBehaviour
@@ -11,12 +12,17 @@ public class StageManager : MonoBehaviour
 
     public List<GameObject> EnemyPrefab;
 
+    public ObjectiveManager ObjectiveManager;
+
     void Start()
     {
         if (GenerateTerrainOnStart)
         {
             TerrainGenerator.CreateTerrain();
         }
+
+        var objectives = FindObjectsByType<ObjectiveInteractable>(FindObjectsSortMode.None).ToList();
+        ObjectiveManager.SetObjectives(objectives);
 
         if (SpawnEnemiesOnStart)
         {

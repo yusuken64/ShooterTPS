@@ -17,6 +17,7 @@ namespace StarterAssets
 		public bool releaseThisFrame;
 		public bool reload;
 		public bool roll;
+		public bool interact;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -78,6 +79,11 @@ namespace StarterAssets
 		{
 			RollInput(value.isPressed);
 		}
+
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
+		}
 #endif
 
 
@@ -125,6 +131,11 @@ namespace StarterAssets
 		public void RollInput(bool newRollState)
 		{
 			roll = newRollState;
+		}
+		
+		public void InteractInput(bool newInteractState)
+		{
+			interact = newInteractState;
 		}
 
 		private void OnApplicationFocus(bool hasFocus)

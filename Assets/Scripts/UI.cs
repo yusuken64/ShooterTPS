@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     public TextMeshProUGUI UIText;
+    public TextMeshProUGUI ObjectiveText;
+    public TextMeshProUGUI InteractableText;
     public Image DamageIndicator;
     public Image DamageDirectionIndicator;
 
@@ -20,7 +22,9 @@ public class UI : MonoBehaviour
         player.DamageTaken += Player_DamageTaken;
 
         DamageIndicator.gameObject.SetActive(false);
+        DamageDirectionIndicator.gameObject.SetActive(false);
 
+        InteractableText.text = "";
     }
 
     private void OnDestroy()
