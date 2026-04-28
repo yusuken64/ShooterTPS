@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
 	public int Health;
 	public Gun CurrentGun;
@@ -21,7 +21,8 @@ public class Player : MonoBehaviour
 		EquipWeapon(currentWeaponIndex);
 	}
 
-	internal void TakeDamage(int amount, Vector3 hitPosition)
+
+	public void TakeDamage(int amount, Vector3 hitPosition)
 	{
 		if (died) { return; }
 

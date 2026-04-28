@@ -30,7 +30,8 @@ public class EnemyChase : EnemyBehaviorBase
             );
         }
 
-        if (Vector3.Distance(transform.position, target.transform.position) < 5f)
+        if (Vector3.Distance(transform.position, target.transform.position) < 5f ||
+            timer <= 0)
         {
             isComplete = true;
         }
@@ -101,6 +102,7 @@ public class EnemyChase : EnemyBehaviorBase
         target = FindFirstObjectByType<Player>();
 
         motor.MoveTo(target.transform.position);
+        _timer = 3f;
     }
 
 	public override void Exit()

@@ -10,9 +10,12 @@ public class EnemyAttack : EnemyBehaviorBase
     public float AttackCooldown;
     private Transform player;
 
+    public bool UseRangedAttack;
     public Transform HitboxSpawnPoint;
     public GameObject HitboxPrefab;
+    public GameObject BulletPrefab;
     public float HitDelay = 0.2f;   // time after animation starts
+    public float AttackRange = 2.5f;
 
     void Start()
     {
@@ -43,8 +46,20 @@ public class EnemyAttack : EnemyBehaviorBase
 
         yield return new WaitForSeconds(HitDelay);
 
-        var hitbox = Instantiate(HitboxPrefab, HitboxSpawnPoint.position, HitboxSpawnPoint.rotation);
-        Destroy(hitbox, 0.2f);
+        if (!UseRangedAttack)
+        {
+            var hitbox = Instantiate(HitboxPrefab, HitboxSpawnPoint.position, HitboxSpawnPoint.rotation);
+            Destroy(hitbox, 0.2f);
+        }
+		else
+        {
+            var offset = new Vector3(0, 1, 0);
+            Vector3 dir = (player.position - HitboxSpawnPoint.position + offset).normalized;
+            Quaternion rot = Quaternion.LookRotation(dir);
+
+            var newBullet = Instantiate(BulletPrefab, HitboxSpawnPoint.position, rot);
+            newBullet.GetComponent<BulletProjectile>().Owner = this;
+        }
 
         AttackCooldown = AttackCooldownMax;
         yield return new WaitForSeconds(AttackCooldownMax);
@@ -63,7 +78,7 @@ public class EnemyAttack : EnemyBehaviorBase
     {
         float dist = Vector3.Distance(transform.position, player.position);
 
-        if (dist > 2.5f)
+        if (dist > AttackRange)
         {
             return false;
         }

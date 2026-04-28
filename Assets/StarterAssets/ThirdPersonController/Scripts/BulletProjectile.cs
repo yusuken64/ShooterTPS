@@ -8,7 +8,9 @@ public class BulletProjectile : MonoBehaviour
     public GameObject HitParticles;
     public GameObject MissParticles;
 
-    void Start()
+	public EnemyAttack Owner { get; internal set; }
+
+	void Start()
     {
         bulletRigidBody = GetComponent<Rigidbody>();
         Destroy(gameObject, MaxLifeTime);
@@ -23,11 +25,16 @@ public class BulletProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.isTrigger) return;
+
+        if (Owner != null &&
+            other.transform.root == Owner.transform.root) return;
+
         Destroy(gameObject);
 		if (other.transform != null &&
-            other.transform.TryGetComponent<Enemy>(out Enemy enemy))
+            other.transform.TryGetComponent<IDamageable>(out IDamageable damagable))
 		{
-			enemy.TakeDamage(1);
+			damagable.TakeDamage(1, other.transform.position);
 			var particle = Instantiate(HitParticles, other.transform.position, Quaternion.identity);
             Destroy(particle, 1f);
 		}
@@ -37,4 +44,9 @@ public class BulletProjectile : MonoBehaviour
             Destroy(particle, 1f);
         }
 	}
+}
+
+internal interface IDamageable
+{
+	void TakeDamage(int v, Vector3 hitPosition);
 }

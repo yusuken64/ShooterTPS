@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
-    public EnemyBrain EnemyBrain;
+	public EnemyBrain EnemyBrain;
 
-    public int HP;
+	public int HP;
 
 	private void Start()
 	{
@@ -12,18 +12,19 @@ public class Enemy : MonoBehaviour
 		EnemyBrain.EnemyChase.target = FindFirstObjectByType<Player>();
 	}
 
-	public void TakeDamage(int damage)
+
+	public void TakeDamage(int damage, Vector3 hitPosition)
 	{
-        if (HP <= 0) { return; }
-        HP -= damage;
-        if (HP <= 0)
+		if (HP <= 0) { return; }
+		HP -= damage;
+		if (HP <= 0)
 		{
-            Die();
+			Die();
 		}
 	}
 
 	private void Die()
-    {
-        EnemyBrain.OnDeath();
-    }
+	{
+		EnemyBrain.OnDeath();
+	}
 }
