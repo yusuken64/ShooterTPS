@@ -18,6 +18,7 @@ namespace StarterAssets
 		public bool reload;
 		public bool roll;
 		public bool interact;
+		public int weaponScroll;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -84,6 +85,20 @@ namespace StarterAssets
 		{
 			InteractInput(value.isPressed);
 		}
+
+		public void OnWeaponScroll(InputValue value)
+		{
+			Vector2 scroll = value.Get<Vector2>();
+
+			if (scroll.y > 0f)
+			{
+				weaponScroll = 1;
+			}
+			else if (scroll.y < 0f)
+			{
+				weaponScroll = -1;
+			}
+		}
 #endif
 
 
@@ -147,6 +162,10 @@ namespace StarterAssets
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
+
+		private void LateUpdate()
+		{
+			weaponScroll = 0;
+		}
 	}
-	
 }

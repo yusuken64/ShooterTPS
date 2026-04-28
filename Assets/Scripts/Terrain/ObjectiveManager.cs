@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -75,7 +76,8 @@ public class ObjectiveManager : MonoBehaviour
 
 	private void HeliInteractable_OnComplete()
 	{
-	}
+        SceneManager.LoadScene("MainMenu");
+    }
 
 	public void RegisterInteraction(IInteractable interactable)
     {
