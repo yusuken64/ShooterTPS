@@ -6,6 +6,7 @@ public class TerrainGenerator : MonoBehaviour
 {
     public List<GameObject> TerrainChunk;
     public GameObject EmptyPlanePrefab;
+    public GameObject WallPrefab;
 
     public int Rows;
     public int Columns;
@@ -41,10 +42,10 @@ public class TerrainGenerator : MonoBehaviour
 
         reservedSpots = new List<Vector2Int>
         {
-            new(0, 0),
-            new(Columns - 1, 0),
-            new(0, Rows - 1),
-            new(Columns - 1, Rows - 1),
+            new(1, 1),
+            new(Columns - 1 - 1, 1),
+            new(1, Rows - 1 - 1),
+            new(Columns - 1 - 1, Rows - 1 - 1),
             new(Columns / 2, Rows / 2),
         };
 
@@ -59,6 +60,11 @@ public class TerrainGenerator : MonoBehaviour
 				if (reservedSpots.Contains(coord))
 				{
 					prefab = EmptyPlanePrefab;
+				}
+                else if (x == 0 || y == 0 ||
+                    x == Columns - 1 || y == Rows - 1)
+				{
+                    prefab = WallPrefab;
 				}
 				else
 				{

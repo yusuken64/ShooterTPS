@@ -818,9 +818,12 @@ MonoBehaviour:
   EnemyAnimationController: {fileID: 5582576641667940055}
   AttackCooldownMax: 5
   AttackCooldown: 0
-  HitboxSpawnPoint: {fileID: 0}
+  UseRangedAttack: 1
+  HitboxSpawnPoint: {fileID: 6049032411377798390}
   HitboxPrefab: {fileID: 822496730940170580, guid: bf8d88001d557ab42915201d1043f9a9, type: 3}
+  BulletPrefab: {fileID: 179104899082881746, guid: 929cefde91de3244f9097f95dee71f35, type: 3}
   HitDelay: 0.2
+  AttackRange: 8
 --- !u!114 &7460955800141366765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,11 +879,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63c2973f552a094b9ff200a46b93b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAnimationController
-  animator: {fileID: 0}
-  idleAnim: idle
-  chaseAnim: run
-  attackAnim: roll
-  deadAnim: die
+  animator: {fileID: 5695817934837700629}
+  idleAnim: Idle
+  chaseAnim: Run
+  attackAnim: Attack Right Hand
+  deadAnim: Falling
 --- !u!195 &5731206500732159579
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1563,6 +1566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4728060750168936337}
+  - component: {fileID: 5695817934837700629}
   m_Layer: 0
   m_Name: CartoonPigEnemy
   m_TagString: Untagged
@@ -1585,8 +1589,31 @@ Transform:
   m_Children:
   - {fileID: 4468538131188976215}
   - {fileID: 7675023676167823139}
+  - {fileID: 6049032411377798390}
   m_Father: {fileID: 5138371698817741508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &5695817934837700629
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624697679504438585}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e035b4c9edb57547b2c579924a08b8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6684060138716826342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1675,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8437876185775429262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7247350032071642243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6049032411377798390}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6049032411377798390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247350032071642243}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.732, z: 0.629}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4728060750168936337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7296034365916504446
 GameObject:
