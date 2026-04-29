@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public abstract class Gun : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public abstract class Gun : MonoBehaviour
     public int ClipSize = 30;
     public int AmmoInClip;
     public int ReserveAmmo;
+    public float SpreadAngle = 8f; // degrees
 
     [Header("Reload")]
     public float ReloadTime = 1.5f;
@@ -94,4 +96,13 @@ public abstract class Gun : MonoBehaviour
     public virtual void OnTriggerReleased() { }
 
 	public virtual void Cock() {}
+
+    public static Vector3 ApplySpread(Vector3 direction, float angle)
+    {
+        float randomYaw = Random.Range(-angle, angle);
+        float randomPitch = Random.Range(-angle, angle);
+
+        Quaternion spreadRotation = Quaternion.Euler(randomPitch, randomYaw, 0);
+        return spreadRotation * direction;
+    }
 }

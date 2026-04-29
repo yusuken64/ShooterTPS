@@ -8,7 +8,7 @@ public class Player : MonoBehaviour, IDamageable
 	public int Health;
 	public Gun CurrentGun;
 	public List<Gun> weapons;
-	private bool died;
+	public bool Died;
 
 	public event Action<int, Vector3> DamageTaken;
 
@@ -18,13 +18,15 @@ public class Player : MonoBehaviour, IDamageable
 
 	private void Start()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
+
 		EquipWeapon(currentWeaponIndex);
 	}
 
-
 	public void TakeDamage(int amount, Vector3 hitPosition)
 	{
-		if (died) { return; }
+		if (Died) { return; }
 
 		Health -= amount;
 		DamageTaken?.Invoke(amount, hitPosition);
@@ -37,8 +39,10 @@ public class Player : MonoBehaviour, IDamageable
 
 	public void Die()
 	{
-		died = true;
+		Died = true;
 		Animator.Play("Die");
+
+		FindFirstObjectByType<ResultsScreen>(FindObjectsInactive.Include).ShowGameOver();
 	}
 
 	private void Update()

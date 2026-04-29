@@ -41,11 +41,12 @@ public class MachineGun : Gun
         var origin = BulletSpawnPoint.position;
 
         Vector3 shootDir = (targetPoint - origin).normalized;
+        Vector3 spreadDir = ApplySpread(shootDir, SpreadAngle);
 
         Instantiate(
             BulletProjectilePrefab,
             origin,
-            Quaternion.LookRotation(shootDir, Vector3.up)
+            Quaternion.LookRotation(spreadDir, Vector3.up)
         );
 
         MuzzleFlash.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);

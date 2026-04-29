@@ -7,7 +7,6 @@ public class Shotgun : Gun
 
     [Header("Shotgun Settings")]
     public int PelletCount = 8;
-    public float SpreadAngle = 8f; // degrees
     public float FireRate = 1f;    // shots per second
 
     private float nextFireTime = 0f;
@@ -57,16 +56,7 @@ public class Shotgun : Gun
         ConsumeAmmo();
     }
 
-    private Vector3 ApplySpread(Vector3 direction, float angle)
-    {
-        float randomYaw = Random.Range(-angle, angle);
-        float randomPitch = Random.Range(-angle, angle);
-
-        Quaternion spreadRotation = Quaternion.Euler(randomPitch, randomYaw, 0);
-        return spreadRotation * direction;
-    }
-
-    public override void Reload()
+	public override void Reload()
     {
         if (isReloading) return;
 

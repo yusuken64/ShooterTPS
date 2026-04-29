@@ -32,6 +32,12 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 	private void Update()
 	{
+		if (Player.Died)
+		{
+			aiming = false;
+			AimVirtualCamera.gameObject.SetActive(false);
+		}
+
 		if (StarterAssetsInputs.aim)
 		{
 			AimVirtualCamera.gameObject.SetActive(true);

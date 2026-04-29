@@ -17,6 +17,7 @@ namespace StarterAssets
     {
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
+        public Player Player;
         public float MoveSpeed = 2.0f;
 
         [Tooltip("Sprint speed of the character in m/s")]
@@ -170,6 +171,11 @@ namespace StarterAssets
 
         private void Update()
         {
+            if (Player.Died)
+            {
+                return;
+            }
+
             if (_rollCooldownTimer > 0f)
             {
                 _rollCooldownTimer -= Time.deltaTime;

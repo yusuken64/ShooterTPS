@@ -16,6 +16,8 @@ public class UI : MonoBehaviour
     private Player player;
     private Tween flashTween;
 
+    public ResultsScreen ResultsScreen;
+
     private void Start()
     {
         player = FindFirstObjectByType<Player>();
@@ -25,6 +27,7 @@ public class UI : MonoBehaviour
         DamageDirectionIndicator.gameObject.SetActive(false);
 
         InteractableText.text = "";
+        ResultsScreen.gameObject.SetActive(false);
     }
 
     private void OnDestroy()

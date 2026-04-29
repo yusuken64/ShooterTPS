@@ -30,14 +30,16 @@ public class ObjectiveManager : MonoBehaviour
         ui.ObjectiveText.text = ObjectivesAsText();
     }
 
-	internal void SpawnObjective()
-	{
-        var newItem =TerrainGenerator.SpawnObjective(ObjectivePrefab.gameObject);
-		List<ObjectiveInteractable> objectives = new()
+    internal void SpawnObjective()
+    {
+        List<ObjectiveInteractable> objectives = new();
+        for (int i = 0; i < 3; i++)
         {
-            newItem.GetComponent<ObjectiveInteractable>()
-        };
-		SetObjectives(objectives);
+            var newItem = TerrainGenerator.SpawnObjective(ObjectivePrefab.gameObject);
+            objectives.Add(newItem.GetComponent<ObjectiveInteractable>());
+        }
+
+        SetObjectives(objectives);
     }
 
 	private string ObjectivesAsText()
@@ -75,8 +77,8 @@ public class ObjectiveManager : MonoBehaviour
     }
 
 	private void HeliInteractable_OnComplete()
-	{
-        SceneManager.LoadScene("MainMenu");
+    {
+        FindFirstObjectByType<ResultsScreen>(FindObjectsInactive.Include).ShowMissionComplete();
     }
 
 	public void RegisterInteraction(IInteractable interactable)
