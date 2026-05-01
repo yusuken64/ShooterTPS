@@ -3500,8 +3500,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
   target: {fileID: 0}
-  EnemyAttack: {fileID: 2991811818836455722}
-  EnemyChase: {fileID: 1032484240226516754}
+  Behaviors:
+  - {fileID: 1032484240226516754}
+  - {fileID: 2991811818836455722}
   EnemyIdle: {fileID: 9102817286906055766}
   EnemyDead: {fileID: 4146373592041346534}
   Current: {fileID: 0}
@@ -3519,7 +3520,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChase
   SelectionPriority: 0
   motor: {fileID: 6233777140420099562}
-  repathRate: 0.2
   rotationSpeed: 10
   target: {fileID: 0}
 --- !u!114 &2991811818836455722
@@ -3543,7 +3543,7 @@ MonoBehaviour:
   HitboxPrefab: {fileID: 822496730940170580, guid: bf8d88001d557ab42915201d1043f9a9, type: 3}
   BulletPrefab: {fileID: 0}
   HitDelay: 0.2
-  AttackRange: 2.5
+  AttackRange: 5
 --- !u!114 &6233777140420099562
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -234,11 +234,7 @@ GameObject:
   - component: {fileID: 1636659724581571536}
   - component: {fileID: 5312336031680998282}
   - component: {fileID: 3271015712730412034}
-  - component: {fileID: 5482712561181452021}
-  - component: {fileID: 2053386388265815011}
   - component: {fileID: 813587141357913059}
-  - component: {fileID: 3363395003300937738}
-  - component: {fileID: 2560496088563647465}
   - component: {fileID: 1772341965051678569}
   - component: {fileID: 1814898498963380758}
   - component: {fileID: 8224687733892316096}
@@ -263,6 +259,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8590778792491856764}
   - {fileID: 1985370972420767832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -293,47 +290,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
   target: {fileID: 0}
-  EnemyAttack: {fileID: 2053386388265815011}
-  EnemyChase: {fileID: 5482712561181452021}
-  EnemyIdle: {fileID: 3363395003300937738}
-  EnemyDead: {fileID: 2560496088563647465}
+  Behaviors:
+  - {fileID: 6440961030014921987}
+  - {fileID: 5662863720506907061}
+  EnemyIdle: {fileID: 6031675387510000388}
+  EnemyDead: {fileID: 5524445103623685293}
   Current: {fileID: 0}
---- !u!114 &5482712561181452021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255270444711973478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a0d5eea5a502d4888a53e11dcd175b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyChase
-  SelectionPriority: 0
-  motor: {fileID: 813587141357913059}
-  repathRate: 0.2
-  rotationSpeed: 10
-  target: {fileID: 0}
---- !u!114 &2053386388265815011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255270444711973478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 673d697cc55ea484b899818b375e1353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
-  SelectionPriority: 0
-  EnemyAnimationController: {fileID: 1772341965051678569}
-  AttackCooldownMax: 5
-  AttackCooldown: 0
-  HitboxSpawnPoint: {fileID: 3751956100697820282}
-  HitboxPrefab: {fileID: 822496730940170580, guid: bf8d88001d557ab42915201d1043f9a9, type: 3}
-  HitDelay: 0.2
 --- !u!114 &813587141357913059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,35 +310,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMotor
   EnemyAnimationController: {fileID: 1772341965051678569}
   agent: {fileID: 1814898498963380758}
---- !u!114 &3363395003300937738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255270444711973478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b1909dffc981144092b905fc954a2ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyIdle
-  SelectionPriority: 0
---- !u!114 &2560496088563647465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255270444711973478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d66e9efea3d69842afae51cde137007, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDead
-  SelectionPriority: 0
-  EnemyAnimationController: {fileID: 1772341965051678569}
-  Died: 0
-  motor: {fileID: 813587141357913059}
 --- !u!114 &1772341965051678569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2960,6 +2893,147 @@ Transform:
   - {fileID: 3808844183383674886}
   m_Father: {fileID: 1841556226005138547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.4101}
+--- !u!1 &2747895215676930578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8590778792491856764}
+  - component: {fileID: 6440961030014921987}
+  - component: {fileID: 963324674107177277}
+  - component: {fileID: 7220296913691295834}
+  - component: {fileID: 5662863720506907061}
+  - component: {fileID: 6031675387510000388}
+  - component: {fileID: 5524445103623685293}
+  m_Layer: 0
+  m_Name: Behaviors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8590778792491856764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1636659724581571536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6440961030014921987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a0d5eea5a502d4888a53e11dcd175b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyChase
+  SelectionPriority: 10
+  motor: {fileID: 813587141357913059}
+  rotationSpeed: 10
+  target: {fileID: 0}
+--- !u!114 &963324674107177277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5aa79fd65a2f364ea0f00884f407d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChaseDirect
+  SelectionPriority: 12
+  motor: {fileID: 813587141357913059}
+  target: {fileID: 0}
+  speed: 3
+  duration: 2
+  rotationSpeed: 10
+--- !u!114 &7220296913691295834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ed734716670b1429a37a0a78edc9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JumpAttack
+  SelectionPriority: 15
+  rb: {fileID: 8224687733892316096}
+  agent: {fileID: 1814898498963380758}
+  target: {fileID: 0}
+  jumpForwardForce: 8
+  jumpUpForce: 5
+  duration: 1.5
+--- !u!114 &5662863720506907061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d697cc55ea484b899818b375e1353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  SelectionPriority: 20
+  EnemyAnimationController: {fileID: 1772341965051678569}
+  AttackCooldownMax: 5
+  AttackCooldown: 0
+  UseRangedAttack: 0
+  HitboxSpawnPoint: {fileID: 3751956100697820282}
+  HitboxPrefab: {fileID: 822496730940170580, guid: bf8d88001d557ab42915201d1043f9a9, type: 3}
+  BulletPrefab: {fileID: 0}
+  HitDelay: 0.2
+  AttackRange: 2.58
+--- !u!114 &6031675387510000388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1909dffc981144092b905fc954a2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyIdle
+  SelectionPriority: 0
+--- !u!114 &5524445103623685293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747895215676930578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d66e9efea3d69842afae51cde137007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDead
+  SelectionPriority: 0
+  EnemyAnimationController: {fileID: 1772341965051678569}
+  Died: 0
+  motor: {fileID: 813587141357913059}
 --- !u!1 &2828042854954815116
 GameObject:
   m_ObjectHideFlags: 0

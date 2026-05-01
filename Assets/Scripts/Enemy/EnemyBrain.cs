@@ -5,14 +5,18 @@ public class EnemyBrain : MonoBehaviour
 {
     public Transform target;
 
-    public EnemyAttack EnemyAttack;
-    public EnemyChase EnemyChase;
+    public List<EnemyBehaviorBase> Behaviors;
     public EnemyIdle EnemyIdle;
     public EnemyDead EnemyDead;
 
     public EnemyBehaviorBase Current;
 
-    void Update()
+	private void Start()
+	{
+        SetBehavior(PickNextBehavior());
+    }
+
+	void Update()
     {
         if (Current == null)
         {
@@ -39,17 +43,23 @@ public class EnemyBrain : MonoBehaviour
 
     EnemyBehaviorBase PickNextBehavior()
     {
-        if (EnemyAttack.CanRun())
+        EnemyBehaviorBase best = null;
+        int bestPriority = int.MinValue;
+
+        foreach (var behavior in Behaviors)
         {
-            return EnemyAttack;
+            if (behavior == Current) continue;
+            if (behavior.IsOnCooldown) continue;
+            if (!behavior.CanRun()) continue;
+
+            if (behavior.Priority > bestPriority)
+            {
+                bestPriority = behavior.Priority;
+                best = behavior;
+            }
         }
 
-        if (EnemyChase.CanRun())
-        {
-            return EnemyChase;
-        }
-
-        return EnemyIdle;
+        return best ?? EnemyIdle;
     }
 
     public void OnDeath()

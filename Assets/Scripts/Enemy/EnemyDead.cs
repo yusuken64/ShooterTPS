@@ -24,11 +24,11 @@ public class EnemyDead : EnemyBehaviorBase
         }
 
         // Disable physics collisions
-        var collider = GetComponent<Collider>();
+        var collider = GetComponentInParent<Collider>();
         if (collider != null)
             collider.enabled = false;
 
-        var rb = GetComponent<Rigidbody>();
+        var rb = GetComponentInParent<Rigidbody>();
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;

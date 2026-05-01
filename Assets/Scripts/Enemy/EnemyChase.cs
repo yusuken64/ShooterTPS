@@ -4,17 +4,16 @@ using UnityEngine.AI;
 public class EnemyChase : EnemyBehaviorBase
 {
     public EnemyMotor motor;
-
-    public float repathRate = 0.2f;
     public float rotationSpeed = 10f;
-
-    private float _timer;
     public Player target;
+
+	private void Start()
+	{
+        target = FindFirstObjectByType<Player>();
+	}
 
 	public override void Tick()
     {
-        _timer -= Time.deltaTime;
-
         // ignore vertical movement
         Vector3 velocity = motor.agent.velocity;
 
@@ -42,19 +41,7 @@ public class EnemyChase : EnemyBehaviorBase
         if (!motor.agent.isActiveAndEnabled)
             return false;
 
-        //NavMeshHit hit;
-        //if (!motor.agent.isOnNavMesh)
-        //{
-
-        //    if (NavMesh.SamplePosition(motor.agent.transform.position, out hit, 5f, NavMesh.AllAreas))
-        //    {
-        //        motor.agent.Warp(hit.position);
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
-        //}
+        if (target == null) { return false; }
 
         NavMeshHit hit;
 
@@ -88,11 +75,6 @@ public class EnemyChase : EnemyBehaviorBase
             return false;
 
         return true;
-
-        if (!hasPath || path.status != NavMeshPathStatus.PathComplete)
-            return false;
-
-        return true;
     }
 
     public override void Enter()
@@ -102,7 +84,7 @@ public class EnemyChase : EnemyBehaviorBase
         target = FindFirstObjectByType<Player>();
 
         motor.MoveTo(target.transform.position);
-        _timer = 3f;
+        timer = 3f;
     }
 
 	public override void Exit()

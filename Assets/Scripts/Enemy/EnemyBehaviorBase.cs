@@ -7,6 +7,9 @@ public abstract class EnemyBehaviorBase : MonoBehaviour, IEnemyBehavior
     internal float timer;
     public bool IsComplete => isComplete;
     public int Priority => SelectionPriority;
+
+	public bool IsOnCooldown { get; internal set; }
+
 	public abstract bool CanRun();
 	public abstract void Enter();
 	public abstract void Exit();

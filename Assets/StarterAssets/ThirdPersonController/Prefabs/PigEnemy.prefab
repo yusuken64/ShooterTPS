@@ -780,8 +780,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
   target: {fileID: 0}
-  EnemyAttack: {fileID: 6215656486404924386}
-  EnemyChase: {fileID: 1445833559984539239}
+  Behaviors:
+  - {fileID: 1445833559984539239}
+  - {fileID: 6215656486404924386}
   EnemyIdle: {fileID: 9026206588184768744}
   EnemyDead: {fileID: 2030343223970572898}
   Current: {fileID: 0}
@@ -799,7 +800,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChase
   SelectionPriority: 0
   motor: {fileID: 7460955800141366765}
-  repathRate: 0.2
   rotationSpeed: 10
   target: {fileID: 0}
 --- !u!114 &6215656486404924386

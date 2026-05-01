@@ -76,6 +76,8 @@ public class EnemyAttack : EnemyBehaviorBase
 
     public override bool CanRun()
     {
+        if (player == null) { return false; }
+
         float dist = Vector3.Distance(transform.position, player.position);
 
         if (dist > AttackRange)

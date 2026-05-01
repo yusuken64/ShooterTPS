@@ -12,9 +12,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	private void Start()
 	{
 		EnemyBrain.target = FindFirstObjectByType<Player>().transform;
-		EnemyBrain.EnemyChase.target = FindFirstObjectByType<Player>();
 	}
-
 
 	public void TakeDamage(int damage, Vector3 hitPosition)
 	{
